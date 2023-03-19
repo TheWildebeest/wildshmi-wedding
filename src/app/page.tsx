@@ -1,91 +1,65 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import localFont from "@next/font/local"
 
-const inter = Inter({ subsets: ['latin'] })
+import babyLakshmi from "/public/assets/images/baby-lakshmi.webp"
+import babyDavid from "/public/assets/images/baby-david.webp"
 
-export default function Home() {
+const annissaScript = localFont({ src: "../../public/assets/fonts/annisa.otf"})
+
+export default function Root() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className="hearts top-left">
+        <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
+      </div>
+      <div className="flex flex-col lg:flex-row justify-between align-between lg:align-between h-screen">
+        <div className="w-full lg:w-1/4 lg:h-full grid place-items-center">
+          <div className="flex lg:hidden" style={{maxWidth: "100%", maxHeight: "35vh", overflow: "hidden"}}>
+            <Image style={{color: "white", objectPosition: "0 12%", objectFit: "cover"}} src={babyLakshmi} alt="Lakshmi as a child"/>
+          </div>
+          <div className="hidden lg:flex" style={{maxWidth: "25vw", maxHeight: "80vh", overflow: "hidden"}}>
+            <Image style={{color: "white", objectPosition: "center", objectFit: "contain"}} src={babyLakshmi} alt="Lakshmi as a child"/>
+          </div>
+        </div>
+        <div className="w-auto h-screen grid place-items-center text-center">
+          <header className={annissaScript.className}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              <span className="text-red-500"> David Wildman{"\n"}</span>
+              <br />
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-purple-500">&{"\n"}</span>
+              <br />
+              <span className="text-indigo-800">Lakshmi Haridas</span>
+            </h1>
+          </header>
+        </div>
+        <div className="w-full lg:w-1/4 lg:h-full grid place-items-center">
+          <div className="flex lg:hidden" style={{maxWidth: "100%", maxHeight: "35vh", overflow: "hidden"}}>
+            <Image style={{color: "white", objectPosition: "0 30%", objectFit: "cover"}} src={babyDavid} alt="Lakshmi as a child"/>
+          </div>
+          <div className="hidden lg:flex" style={{maxWidth: "25vw", maxHeight: "80vh", overflow: "hidden"}}>
+            <Image style={{color: "white", objectPosition: "center", objectFit: "contain"}} src={babyDavid} alt="Lakshmi as a child"/>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
+      {/* <div className="absolute top-0 left-0 w-full h-screen grid place-items-center text-center">
+      <header className={annissaScript.className}>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-red-500">David <span className="font-bold">Wild</span>man</h1>
+        <br className="hidden lg:initial" />
+        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-purple-500">&</p>
+        <br className="hidden lg:initial" />
+        <p  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-indigo-800">Lak<span className="font-bold">shmi</span> Haridas</p>
+        </header>
+      </div> */}
+      <div className="hearts bottom-right">
+        <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }

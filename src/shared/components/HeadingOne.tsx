@@ -3,7 +3,7 @@ import { FC, PropsWithChildren } from "react";
 
 const annissaScript = localFont({ src: "../../../public/assets/fonts/annisa.otf"});
 
-export const HeadingOne = (props: PropsWithChildren) => {
+export const HeadingOne = ({children}: PropsWithChildren) => {
   const classNames = [
     annissaScript.className,
     'text-center',
@@ -18,7 +18,6 @@ export const HeadingOne = (props: PropsWithChildren) => {
     'my-8',
   ].join(' ');
 
-  const { children } = props;
   return (
     <div className={classNames}>
       <h1 className='w-4/5 lg:w-3/5 mx-auto'>{ children }</h1>
