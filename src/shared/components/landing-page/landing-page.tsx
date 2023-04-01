@@ -1,27 +1,24 @@
-"use client"
-import { Data } from '@/pages/api/invitation';
 import Image from 'next/image';
 import styles from "./styles.module.css";
-import hero from "/public/assets/images/hero-4.webp"
+import hero from "/public/assets/images/david-and-lakshmi-1.jpg"
 import { Segment } from '@/shared/components/client/Segment';
-import { ReactNode } from 'react';
-import { useSelectedLayoutSegment } from 'next/navigation';
-import { SegmentContextProvider } from '../../shared/SegmentContext';
+import { FC, ReactNode } from 'react';
 import { NavBar } from '@/shared/components/Navbar/NavBar';
+import { InvitationContextProvider } from '@/shared/providers/InvitationContext';
+import { InvitationType } from '@/shared/models';
 
 const { heroWrapper, heroImage } = styles;
 
 interface Props {
-  children: ReactNode
+  children: ReactNode,
+  invitationType: InvitationType
 }
 
-export default function ContentLayout({children}: Props) {
-
-  const segment = useSelectedLayoutSegment();
+const LandingPage: FC<Props> = ({children, invitationType}: Props) => {
 
   return (
     <>
-      <SegmentContextProvider segment={segment || ''}>
+      <InvitationContextProvider invitationType={invitationType}>
         <NavBar></NavBar>
         <div className={heroWrapper}>
           <Image
@@ -46,7 +43,9 @@ export default function ContentLayout({children}: Props) {
         </div>
         { children }
         <hr />
-      </SegmentContextProvider>
+      </InvitationContextProvider>
     </>
   )
 }
+
+export default LandingPage;

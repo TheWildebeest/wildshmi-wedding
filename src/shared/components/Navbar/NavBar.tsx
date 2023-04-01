@@ -1,11 +1,13 @@
+"use client"
 import Link from 'next/link';
-import Image from 'next/image';
 import React, { useContext, useState } from 'react';
 import NavItem from '../NavItem/NavItem';
-import { SegmentContext } from '@/shared/SegmentContext';
+import { InvitationContext } from '@/shared/providers/InvitationContext';
+import { getPathByInvitationType } from '@/shared/helpers/getPathFromInvitationType';
 
 export const NavBar = () => {
-  const segment = useContext(SegmentContext);
+  const homePath = getPathByInvitationType(useContext(InvitationContext)).toLocaleLowerCase().replaceAll(' ', '-')
+
   const MENU_LIST = [
     { text: 'OUR BIG DAY', href: '/our-big-day' },
     { text: 'OUR STORY', href: '/our-story' },
@@ -20,7 +22,7 @@ export const NavBar = () => {
   return (
     <header>
       <nav className={`nav`}>
-        <Link href={'/' + segment}>
+        <Link href={'/' + homePath}>
           <h1 className="logo">HOME</h1>
         </Link>
         <div
