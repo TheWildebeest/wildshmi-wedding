@@ -1,49 +1,49 @@
 "use client"
-import Link from 'next/link';
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import NavItem from '../NavItem/NavItem';
-import { InvitationContext } from '@/shared/providers/InvitationContext';
-import { getPathByInvitationType } from '@/shared/helpers/getPathFromInvitationType';
+import { getPathByInvitationType } from '@/shared/helpers/invitationTypeHelpers';
+import { InvitationType } from '@/shared/models';
+import { dataProvider } from '@/shared/providers/dataProvider';
+import styles from './styles.module.css';
 
-export const NavBar = () => {
-  const homePath = getPathByInvitationType(useContext(InvitationContext)).toLocaleLowerCase().replaceAll(' ', '-')
+interface Props {
+  invitationType: InvitationType;
+}
 
-  const MENU_LIST = [
-    { text: 'OUR BIG DAY', href: '/our-big-day' },
-    { text: 'OUR STORY', href: '/our-story' },
-    { text: 'TRAVEL AND TIPS', href: '/travel-and-tips' },
-    { text: 'RSVP', href: '/rsvp' },
-    { text: 'GIFTS', href: '/gifts' },
-    { text: 'CONTACT', href: '/contact' },
-  ];
+const getMenuItems = (invitationType: InvitationType) => {
+  return dataProvider.getMenu(getPathByInvitationType(invitationType))}
+
+export const NavBar = ({ invitationType }: Props) => {
+
+  const { menu, active } = styles;
+
   const [navActive, setNavActive] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
+  const toggleNav = () => setNavActive(!navActive)
 
   return (
-    <header>
-      <nav className={`nav`}>
-        <Link href={'/' + homePath}>
-          <h1 className="logo">HOME</h1>
-        </Link>
-        <div
-          onClick={() => setNavActive(!navActive)}
-          className={`nav__menu-bar`}
-        >
-        </div>
-        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-          {MENU_LIST.map((menu, idx) => (
-            <div
-              onClick={() => {
-                setActiveIdx(idx);
-                setNavActive(false);
-              }}
-              key={menu.text}
+    <>
+      <nav className='absolute top-0 left-0 right-0 text-white w-2/5 lg:w-full'>
+        <button onClick={toggleNav} className='lg:hidden absolute m-4'>
+          { navActive ? '✕' : '☰'}
+        </button>
+        <ul className={`${menu} ${navActive ? active : ""} flex flex-col lg:flex-row justify-center mt-12 lg:mt-6`}>
+          {getMenuItems(invitationType).map((menuItem, idx) => (
+            <li
+              key={menuItem.text}
+              className='mx-4'
             >
-              <NavItem active={activeIdx === idx} {...menu} />
-            </div>
+              <NavItem
+                handleClick={() => {
+                  setActiveIdx(idx);
+                  setNavActive(false);
+                }}
+                active={activeIdx === idx} {...menuItem} />
+            </li>
           ))}
-        </div>
+        </ul>
       </nav>
-    </header>
+    </>
+
   );
 };

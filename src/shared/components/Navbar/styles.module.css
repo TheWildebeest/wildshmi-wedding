@@ -1,0 +1,13 @@
+.menu {
+
+  transition: all 0.25s ease;
+
+  transform: translate(-100%, 0);
+
+  &.active {
+    transform: translate(0, 0);
+  }
+  @media screen(lg) {
+    transform: unset;
+  }
+}

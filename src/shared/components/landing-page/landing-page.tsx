@@ -7,7 +7,7 @@ import { NavBar } from '@/shared/components/Navbar/NavBar';
 import { InvitationContextProvider } from '@/shared/providers/InvitationContext';
 import { InvitationType } from '@/shared/models';
 
-const { heroWrapper, heroImage } = styles;
+const { heroImageWrapper, heroImage, heroFilter } = styles;
 
 interface Props {
   children: ReactNode,
@@ -19,26 +19,19 @@ const LandingPage: FC<Props> = ({children, invitationType}: Props) => {
   return (
     <>
       <InvitationContextProvider invitationType={invitationType}>
-        <NavBar></NavBar>
-        <div className={heroWrapper}>
-          <Image
-            className={heroImage}
-            priority
-            src={hero}
-            alt="hero image example"
-          />
+        <NavBar invitationType={invitationType}></NavBar>
+
+        <div className={heroImageWrapper}>
+          <div className={heroFilter}></div>
+            <Image
+              className={heroImage}
+              priority
+              src={hero}
+              alt="hero image example"
+            />
           <header className="p-8">
-          <Segment></Segment>
-            <nav>
-              <ul className='uppercase font-bold'>
-                <li className='hidden lg:inline-block px-2'>Our big day </li>
-                <li className='hidden lg:inline-block px-2'>Our story </li>
-                <li className='hidden lg:inline-block px-2'>Travel and tips </li>
-                <li className='hidden lg:inline-block px-2'>RSVP </li>
-                <li className='hidden lg:inline-block px-2'>Gifts </li>
-                <li className='hidden lg:inline-block px-2'>Contact </li>
-              </ul>
-            </nav>
+            <Segment></Segment>
+
           </header>
         </div>
         { children }
