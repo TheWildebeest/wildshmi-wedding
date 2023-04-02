@@ -1,20 +1,19 @@
 import Link from "next/link";
+import styles from './styles.module.css';
+
+const { active } = styles;
 
 interface Props {
-  handleClick: () => any;
+  basePath?: string;
   text: string;
   href: string;
-  active: boolean
+  isActive: boolean
 }
 
-const NavItem = ({ text, href, active, handleClick }: Props) => {
+const NavItem = ({ basePath, text, href, isActive, }: Props) => {
   return (
-    <Link href={href} onClick={handleClick}>
-      <span
-        className={`nav__item ${
-          active ? "active" : ""
-        }`}
-      >
+    <Link href={basePath + href}>
+      <span className={`nav-item ${isActive ? active : ""}`}>
         {text}
       </span>
     </Link>

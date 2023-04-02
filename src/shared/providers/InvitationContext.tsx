@@ -1,18 +1,18 @@
 "use client"
 import { createContext, FC, ReactNode } from 'react';
-import { InvitationType, InvitationTypes } from '../models';
+import { EventType, EventNames, EventTypes } from '../models';
 
-export const InvitationContext = createContext(InvitationTypes.EVENING_GUEST);
+export const InvitationContext = createContext<EventType>(EventTypes.WEDDING_RECEPTION);
 
 interface Props {
-  invitationType: InvitationType,
+  eventType: EventType,
   children: ReactNode,
 }
 
-export const InvitationContextProvider: FC<Props> = ({ invitationType, children }: Props) => {
+export const InvitationContextProvider: FC<Props> = ({ eventType, children }: Props) => {
 
   return (
-    <InvitationContext.Provider value={invitationType}>
+    <InvitationContext.Provider value={eventType}>
       { children }
     </InvitationContext.Provider>
   )
