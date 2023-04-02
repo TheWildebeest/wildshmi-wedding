@@ -7,7 +7,7 @@ interface Props {
 }
 
 const WeddingLandingPage = ({children}: Props) => {
-  return LandingPage({ children, invitationType: InvitationTypes.EVENING_GUEST })
+  return LandingPage({ children, invitationType: InvitationTypes.DAY_GUEST })
 }
 
 export default WeddingLandingPage;
