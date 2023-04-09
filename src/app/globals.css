@@ -5,13 +5,22 @@
 @tailwind components;
 
 :root {
+  /**
+   * Red
+   */
   --wildshmi-primary: #a20307;
+  /**
+   * Pink
+   */
   --wildshmi-secondary: #edb3b6;
+  /**
+   * Black
+   */
   --wildshmi-black: #2a2b2a;
 }
 
 body {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 hr {

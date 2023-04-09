@@ -22,7 +22,7 @@ export const NavBar = ({ eventType }: Props) => {
   const toggleNav = () => setNavActive(!navActive)
 
   return (
-    <nav className='absolute top-0 left-0 right-0 text-white w-2/5 lg:w-full'>
+    <nav className='absolute top-0 left-0 right-0 text-white w-full'>
       <button onClick={toggleNav} className='lg:hidden absolute m-4'>
         { navActive ? '✕' : '☰'}
       </button>

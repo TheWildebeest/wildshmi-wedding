@@ -1,5 +1,9 @@
+import { Text } from "@/shared/components/Text";
 import React, { FC, PropsWithChildren } from "react"
 
-const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => <><h2>Our Story</h2>{children}</>
-
+const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => (
+  <>
+    <Text>Our Story</Text>{children}
+  </>
+)
 export default OurStoryPage;
