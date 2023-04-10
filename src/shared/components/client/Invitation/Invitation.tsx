@@ -7,14 +7,15 @@ import { use, useContext } from 'react';
 import fonts from '@/shared/fonts';
 
 export const Invitation = () => {
+  const { arima } = fonts;
   const eventName = EventNames[(useContext(InvitationContext))]
   const res: Response = use(fetch("http://localhost:3000/api/invitation"));
   const data: Data = use(res.json());
   console.log('Fetched data: ', data.url)
   return (
-    <div className={`${fonts.caveat} w-100 pt-2 px-2 lg:px-6 lg:pt-2 text-center`}>
+    <div className={'text-center ' + arima}>
       <Text tagName='div' size='M'>You are warmly invited to join</Text>
-      <Text tagName='div' size='XXL'>David & Lakshmi</Text>
+      <Text tagName='div' size='XXL'>David <strong style={{ color: 'var(--wildshmi-primary)'}}>&</strong> Lakshmi</Text>
       <Text tagName='div' size='M'>at our {eventName} on</Text>
       <Text tagName='div' size='XL'>26 August 2023</Text>
     </div>

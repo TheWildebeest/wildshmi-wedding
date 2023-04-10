@@ -1,18 +1,75 @@
-import { MenuItem } from "../models";
+import { MenuItem, PageName, Href } from "../models";
+
+
+
+const HREFS: Record<PageName, Href> = {
+  HOME: '',
+  OUR_BIG_DAY: 'our-big-day',
+  OUR_STORY: 'our-story',
+  TRAVEL_AND_TIPS: 'travel-and-tips',
+  RSVP: 'rsvp',
+  GIFTS: 'gifts',
+  CONTACT: 'contact',
+}
+
+Object.freeze(HREFS);
+
+const PAGE_TITLES: Record<Href, string> = {
+  '': '',
+  'our-big-day': 'Our Big Day',
+  'our-story': 'Our Story',
+  'travel-and-tips': 'Travel & Tips',
+  'rsvp': 'RSVP',
+  'gifts': 'Gifts',
+  'contact': 'Contact'
+}
+
+Object.freeze(PAGE_TITLES);
 
 const MENU_ITEMS: MenuItem[] = [
-  { text: 'HOME', href: '' },
-  { text: 'OUR BIG DAY', href: 'our-big-day' },
-  { text: 'OUR STORY', href: 'our-story' },
-  { text: 'TRAVEL AND TIPS', href: 'travel-and-tips' },
-  { text: 'RSVP', href: 'rsvp' },
-  { text: 'GIFTS', href: 'gifts' },
-  { text: 'CONTACT', href: 'contact' },
-]
+  {
+    text: 'HOME',
+    href: HREFS.HOME
+  },
+  {
+    text: 'OUR BIG DAY',
+    href: HREFS.OUR_BIG_DAY
+  },
+  {
+    text: 'OUR STORY',
+    href: HREFS.OUR_STORY
+  },
+  {
+    text: 'TRAVEL AND TIPS',
+    href: HREFS.TRAVEL_AND_TIPS
+  },
+  {
+    text: 'RSVP',
+    href: HREFS.RSVP
+  },
+  {
+    text: 'GIFTS',
+    href: HREFS.GIFTS
+  },
+  {
+    text: 'CONTACT',
+    href: HREFS.CONTACT
+  },
+];
+
+Object.freeze(MENU_ITEMS);
 
 const dataProvider = {
+  __MENU_ITEMS: MENU_ITEMS,
+
+  __PAGE_TITLES: PAGE_TITLES,
+
   getMenu() {
-    return MENU_ITEMS
+    return this.__MENU_ITEMS
+  },
+
+  getPageTitles() {
+    return this.__PAGE_TITLES;
   }
 }
 

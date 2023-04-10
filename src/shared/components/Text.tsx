@@ -9,7 +9,6 @@ interface Props extends PropsWithChildren {
 }
 
 const defaultClasses = [
-  fonts.arima,
   'font-thin',
   'text-center',
   'w-100',

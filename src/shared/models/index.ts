@@ -14,5 +14,23 @@ export enum EventNames {
 
 export interface MenuItem {
   text: string;
-  href: string;
+  href: Href;
 }
+
+export type PageName =
+  | 'HOME'
+  | 'OUR_BIG_DAY'
+  | 'OUR_STORY'
+  | 'TRAVEL_AND_TIPS'
+  | 'RSVP'
+  | 'GIFTS'
+  | 'CONTACT'
+
+export type Href =
+  | ''
+  | 'our-big-day'
+  | 'our-story'
+  | 'travel-and-tips'
+  | 'rsvp'
+  | 'gifts'
+  | 'contact'

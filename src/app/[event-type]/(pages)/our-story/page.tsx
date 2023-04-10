@@ -3,7 +3,7 @@ import React, { FC, PropsWithChildren } from "react"
 
 const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => (
   <>
-    <Text>Our Story</Text>{children}
+    {children}
   </>
 )
 export default OurStoryPage;

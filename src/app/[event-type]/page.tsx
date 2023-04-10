@@ -14,19 +14,23 @@ interface Props {
 const WeddingPage: FC<Props> = ({ children, params }: Props) => (
   <>
     <Invitation></Invitation>
-    <div className='text-center w-100'></div>
-        <Image
-          src={rose}
-          alt='Picture of a rose'
-          style={{
-            margin: '1rem auto 0',
-            // objectPosition: 'center center',
-            objectFit: 'cover',
-            width: '20%'
-          }}
-          >
-        {/* style={{color: "white", objectPosition: "0 12%", objectFit: "cover"}} src={babyLakshmi} alt="Lakshmi as a child" */}
-        </Image>
+    <div className='text-center w-100'>
+    <Text tagName='div' size='XL'>
+      <Image
+        src={rose}
+        alt='Picture of a rose'
+        style={{
+          margin: '1rem auto 0',
+          // objectPosition: 'center center',
+          objectFit: 'cover',
+          width: '6em'
+        }}
+        >
+      {/* style={{color: "white", objectPosition: "0 12%", objectFit: "cover"}} src={babyLakshmi} alt="Lakshmi as a child" */}
+      </Image>
+    </Text>
+
+    </div>
       {children}
   </>
 );

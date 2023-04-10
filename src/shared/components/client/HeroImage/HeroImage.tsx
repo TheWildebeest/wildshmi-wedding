@@ -9,6 +9,7 @@ export const HeroImage = () => (
   <div className={heroImageWrapper}>
     <div className={heroFilter}></div>
       <Image
+        fill
         priority
         className={heroImage}
         src={hero}
