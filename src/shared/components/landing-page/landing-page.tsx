@@ -16,7 +16,11 @@ const LandingPage: FC<Props> = ({children, eventType}: Props) => {
       <InvitationContextProvider eventType={eventType}>
         <NavBar eventType={eventType}></NavBar>
         <HeroImage></HeroImage>
-        <main className='w-100 pt-2 lg:pt-6 px-2 lg:px-6 '>
+        <main className='
+          w-100
+          mt-2 sm:mt-6 md:mt-12
+          px-4 sm:px-12 md:px-24 lg:mx-24'
+          >
           { children }
         </main>
       </InvitationContextProvider>

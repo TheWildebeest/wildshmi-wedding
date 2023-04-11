@@ -32,12 +32,12 @@ const MENU_ITEMS: MenuItem[] = [
     href: HREFS.HOME
   },
   {
-    text: 'OUR BIG DAY',
-    href: HREFS.OUR_BIG_DAY
-  },
-  {
     text: 'OUR STORY',
     href: HREFS.OUR_STORY
+  },
+  {
+    text: 'OUR BIG DAY',
+    href: HREFS.OUR_BIG_DAY
   },
   {
     text: 'TRAVEL AND TIPS',

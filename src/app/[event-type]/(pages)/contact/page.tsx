@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren } from "react"
 
-const ContactPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => <><h2>Contact</h2>{children}</>
+const ContactPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => <>{children}</>
 
 export default ContactPage;

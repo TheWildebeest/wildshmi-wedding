@@ -17,6 +17,10 @@
    * Black
    */
   --wildshmi-black: #2a2b2a;
+  /**
+   * Grey
+   */
+   --wildshmi-grey: #696A69;
 }
 
 body {
@@ -30,6 +34,11 @@ hr {
   border-bottom: none;
   border-left: none;
   border-right: none;
+}
+
+caption, figcaption {
+  font-style: italic;
+  line-height: unset;
 }
 
 .hearts {

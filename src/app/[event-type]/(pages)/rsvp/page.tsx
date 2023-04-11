@@ -1,6 +1,6 @@
 import React, { FC, PropsWithChildren } from "react"
 
-const RSVPPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => <><h2>RSVP</h2>{children}</>
+const RSVPPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => <>{children}</>
 
 export default RSVPPage;
 

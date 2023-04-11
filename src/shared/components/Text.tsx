@@ -1,7 +1,7 @@
 import fonts from '@/shared/fonts'
 import React, { FC, PropsWithChildren } from "react";
 
-type Size = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL' | 'XXXXL';
+type Size = 'XXXS' | 'XXS' | 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL' | 'XXXXL';
 
 interface Props extends PropsWithChildren {
   tagName?: keyof HTMLElementTagNameMap;
@@ -10,11 +10,19 @@ interface Props extends PropsWithChildren {
 
 const defaultClasses = [
   'font-thin',
-  'text-center',
   'w-100',
   'my-1'
 ];
 
+const XXXS = [
+  // Font size
+  'text-3xs', 'sm:text-2xs', 'md:text-xs', 'lg:text-sm', 'xl:text-base',
+];
+
+const XXS = [
+  // Font size
+  'text-2xs', 'sm:text-xs', 'md:text-sm', 'lg:text-base', 'xl:text-lg',
+];
 
 const XS = [
   // Font size
@@ -72,6 +80,8 @@ export const Text: FC<Props> = ({ tagName = 'div', size = 'XS', children }: Prop
 
 
   const classNames: Record<Size, string[]>  = {
+    XXXS,
+    XXS,
     XS,
     S,
     M,

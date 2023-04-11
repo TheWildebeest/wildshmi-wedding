@@ -5,7 +5,12 @@ module.exports = {
     "./src/shared/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '2xs': ['0.625rem', '0.875rem'],
+        '3xs': ['0.5rem', '0.75rem'],
+      }
+    },
   },
   plugins: [],
 }

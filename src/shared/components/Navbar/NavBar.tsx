@@ -4,7 +4,8 @@ import NavItem from '../NavItem/NavItem';
 import { EventType, MenuItem } from '@/shared/models';
 import { dataProvider } from '@/shared/providers/dataProvider';
 import styles from './styles.module.css';
-import { usePathname, useSelectedLayoutSegment } from 'next/navigation';
+import { useSelectedLayoutSegments } from 'next/navigation';
+import fonts from '@/shared/fonts';
 
 interface Props {
   eventType: EventType;
@@ -16,7 +17,8 @@ const menuItems = dataProvider.getMenu();
 
 export const NavBar = ({ eventType }: Props) => {
 
-  const _path = useSelectedLayoutSegment();
+  const [_, _path] = useSelectedLayoutSegments();
+  console.log(_path)
   const path = _path || '';
   const [navActive, setNavActive] = useState(false);
   const toggleNav = () => setNavActive(!navActive)
@@ -26,7 +28,7 @@ export const NavBar = ({ eventType }: Props) => {
       <button onClick={toggleNav} className='lg:hidden absolute m-4'>
         { navActive ? '✕' : '☰'}
       </button>
-      <ul className={`${menu} ${navActive ? active : ""} flex flex-col lg:flex-row justify-center mt-12 lg:mt-6`}>
+      <ul className={`${menu} ${navActive ? active : ''} flex flex-col lg:flex-row justify-center mt-12 lg:mt-6`}>
         {menuItems.map((menuItem: MenuItem) => {
           const { href, text } = menuItem;
           return (

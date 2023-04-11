@@ -1,0 +1,1 @@
+export { AccessibleImage } from './AccessibleImage';
