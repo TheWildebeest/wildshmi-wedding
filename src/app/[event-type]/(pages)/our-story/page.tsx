@@ -1,3 +1,5 @@
+"use client"
+
 import { Paragraph } from "@/shared/components/Paragraph";
 import { Text } from "@/shared/components/Text";
 import React, { FC, PropsWithChildren } from "react"
@@ -6,9 +8,13 @@ import blingshmi from '@/../public/assets/images/blingshmi.jpg';
 import laughshmi from '@/../public/assets/images/laughshmi.jpg';
 import kingdavid from '@/../public/assets/images/king-david.jpg';
 import { AccessibleImage } from "@/shared/components/AccessibleImage";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => (
-  <>
+const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => {
+  const basePath = usePathname()?.replace('/our-story', '');
+
+  return <>
     <Text tagName='h2' size='L'>Beginnings</Text>
     <Paragraph>
       All of the greatest heroes have a really cool origin story.
@@ -63,30 +69,69 @@ const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) =>
       One area where the regal and non-regal Davids differ is in the caliber of giants they pick as enemies. The only giant David has slain is his own expectations of becoming rich and successful before the age of 35.
     </Paragraph>
     <Paragraph>
-      David was born in Liverpool and grew up on the Isle of Man, where he loves to return to 
+      David was born in Liverpool and grew up on the Isle of Man. After visiting China at the age of 16, he opted to study Chinese at the University of Cambridge. Cambridge was the 6th best university in the world during David&lsquo;s time there. Thankfully, nearly a decade on, Cambridge has recovered from the impact of David&lsquo;s tenure, and it now comes in at third place.
     </Paragraph>
-    <Text tagName='h2' size='M'>November Cuties</Text>
+    <Paragraph>
+      Starting his career in media sales, David spent three years selling digital advertising to clients in Jersey, Guernsey, London, and even the Isle of Man; eventually branching out further afield and visiting Moscow, Kuala Lumpur, Beijing, and Shanghai.
+    </Paragraph>
+    <Paragraph>
+      It was as stressful as it sounds, and David is relieved to be on the other side of a career change which he started in early 2019. He is now in his second job as a Software Developer and loves JavaScript almost as much as he once loved Mandarin Chinese, but far less than he loves his golden godess Lakshmi.
+    </Paragraph>
+    <Text tagName='h2' size='M'>How they met</Text>
+    <Paragraph>
+    &ldquo;We met the old fashioned way — on Tinder!&rdquo;
+    </Paragraph>
+    <Paragraph>
+      Lakshmi and David have been together (pretty much literally) from when they first met in the Three Tuns pub in Aldgate East in London, on November 3rd 2020.
+    </Paragraph>
+    <Paragraph>
+      They chatted over a pint and took an instant liking to one another. Lakshmi was impressed by David&lsquo;s biceps, and David was bowled over by Lakshmi&lsquo;s generous compliments.
+    </Paragraph>
+    <Paragraph>
+      Lakshmi approached David with a proposition that he simply couldn&lsquo;t refuse. She told him she had an Xbox One and a new game had just come out that was co-operative multiplayer.
+    </Paragraph>
+    <Paragraph>
+      &ldquo;Beer AND video games? I&lsquo;d better hold on to this one!&rdquo;, David thought to himself.
+    </Paragraph>
+    <Paragraph>
+      Over the next two months, David and Lakshmi got to know each other as Leo and Vincent, the playable protagonist characters in A Way Out. As Leo and Vincent, they met each other for the first time again, escaped from prison together, evaded police, and tracked down a crime boss, all while navigating the twists and turns of the characters&lsquo; relationship.
+    </Paragraph>
+    <Paragraph>
+      The following two years, meanwhile, have seen David and Lakshmi get to know each other in real life. This has thankfully featured far less violence and fewer encounters with police (apart from that one time). Nevertheless, the journey has been equally if not more exhilarating, as they stepped outside their comfort zones, daring to trust and support one another enough to be able to start planning a future together.
+    </Paragraph>
+    <Paragraph>
+      In many ways, it has been all-or-nothing since the start. The day after their first date, a national lockdown was announced the very next day. This was the third such lockdown of the Covid-19 pandemic, and though we all knew the drill by this point, Lakshmi and David were faced forming a &ldquo;support bubble&rdquo; in order to be able to continue seeing each other, or waiting until after lockdown.
+    </Paragraph>
+    <Paragraph>
+      Who would have known that the humble bubble which once supported Lakshmi and David&lsquo;s nascent relationship was to be a progenitor of nuptials?
+    </Paragraph>
+    <Paragraph>
+      Because of the lockdown, their first months were spent in close quarters at each others&lsquo; flats, playing games, cooking exotic meals together, watching TV shows. It was only later as restrictions eased that they began to venture out to explore the streets of East London, visiting the docks to feed the ducks, and taking evening strolls by the river and across Tower Bridge.
+    </Paragraph>
+    <Paragraph>
+      In the summer of 2022 they had the opportunity to meet each others&lsquo; parents, with Haridas and Latha flying over from Trivandrum and Chris and Martine from the Isle of Man, to spend some time testing the waters as in-laws. We knew it would work out when Martine&lsquo;s lentil sauce recipe found a new role to play as a lentil daal, accompanying Latha&lsquo;s lamb biryani.
+    </Paragraph>
+    <Text tagName='h2' size='M'>Getting engaged</Text>
+    <Paragraph>
+      The decision to get married made happened naturally and gradually as Lakshmi and David got to know each other, but as 2022 drew to a close we started thinking making it a reality. 
+    </Paragraph>
+    <Paragraph>
+      2023 kicked off with choosing the date, and as February edged ever closer, David started planning a proper proposal to surprise Lakshmi with a ring on Valentine&lsquo;s day.
+    </Paragraph>
+    <Paragraph>
+      Booking the day off work for both of them, David arrange a day full of romantic activities — breakfast at sunrise in a 40th-floor restaraunt, a massage workshop with roses, prosecco, and chocolates, a game of Chess which he let Lakshmi win, and an afternoon tea with a special diamond-based desert!
+    </Paragraph>
+    <Paragraph>
+      It was the perfect day and we celebrated afterwards with another surprise — a trip back to where it all started at The Three Tuns, where Lakshmi&lsquo;s friends and colleagues were waiting with prosecco on standby to surprise her.
+    </Paragraph>
+    <Paragraph>
+      Going straight from one whirlwind experience to another, David and Lakshmi then jetted off to India in March 2023 along with David&lsquo;s parents and three siblings for an &ldquo;official&rdquo; engagement ceremony with Lakshmi&lsquo;s extended family. You can check these out on the <Link href={{ pathname: basePath + '/photos' }}>photos</Link> page.
+    </Paragraph>
     <Paragraph>
       
-    </Paragraph>
-    <Paragraph>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae totam nostrum dicta sunt corrupti laudantium, aliquid ipsum sed perspiciatis provident sint laboriosam voluptates perferendis quam esse eligendi minima voluptate maiores!
-    </Paragraph>
-    <Paragraph>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis?
-    </Paragraph>
-    <Text tagName='h2' size='M'>August Nupties</Text>
-    <Paragraph>
-      
-    </Paragraph>
-    <Paragraph>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae totam nostrum dicta sunt corrupti laudantium, aliquid ipsum sed perspiciatis provident sint laboriosam voluptates perferendis quam esse eligendi minima voluptate maiores!
-    </Paragraph>
-    <Paragraph>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis?
     </Paragraph>
 
     {children}
   </>
-)
+}
 export default OurStoryPage;

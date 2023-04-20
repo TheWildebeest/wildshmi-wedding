@@ -10,6 +10,7 @@ const HREFS: Record<PageName, Href> = {
   RSVP: 'rsvp',
   GIFTS: 'gifts',
   CONTACT: 'contact',
+  PHOTOS: 'photos',
 }
 
 Object.freeze(HREFS);
@@ -21,7 +22,8 @@ const PAGE_TITLES: Record<Href, string> = {
   'travel-and-tips': 'Travel & Tips',
   'rsvp': 'RSVP',
   'gifts': 'Gifts',
-  'contact': 'Contact'
+  'contact': 'Contact',
+  'photos': 'Photos'
 }
 
 Object.freeze(PAGE_TITLES);
@@ -55,6 +57,10 @@ const MENU_ITEMS: MenuItem[] = [
     text: 'CONTACT',
     href: HREFS.CONTACT
   },
+  {
+    text: 'PHOTOS',
+    href: HREFS.PHOTOS
+  }
 ];
 
 Object.freeze(MENU_ITEMS);

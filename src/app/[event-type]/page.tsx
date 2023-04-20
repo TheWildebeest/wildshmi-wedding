@@ -2,7 +2,6 @@
 import Invitation from '@/shared/components/client/Invitation';
 import { Text } from '@/shared/components/Text';
 import { FC, ReactNode } from 'react';
-import styles from './styles.module.css'
 import Image from 'next/image'
 import rose from '../../../public/assets/images/rose-1.webp';
 

@@ -25,6 +25,7 @@ export type PageName =
   | 'RSVP'
   | 'GIFTS'
   | 'CONTACT'
+  | 'PHOTOS'
 
 export type Href =
   | ''
@@ -34,3 +35,4 @@ export type Href =
   | 'rsvp'
   | 'gifts'
   | 'contact'
+  | 'photos'
