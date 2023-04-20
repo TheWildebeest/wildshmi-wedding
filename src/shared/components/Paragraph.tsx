@@ -1,16 +1,13 @@
 
-import fonts from '@/shared/fonts'
 import React, { FC, PropsWithChildren } from "react";
-import { spacing } from '@/shared/helpers';
-
-type Size = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL' | 'XXXXL';
+import { paragraphSpacing } from '@/shared/helpers';
 
 interface Props extends PropsWithChildren {
   className?: HTMLParagraphElement['className'];
 }
 
 const defaultClasses = [
-  ...spacing,
+  ...paragraphSpacing,
   'font-light',
   'text-sm',
   'lg:text-lg',

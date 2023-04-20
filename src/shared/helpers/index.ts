@@ -1,1 +1,1 @@
-export { spacing } from './layoutHelpers';
+export { imageSpacing, paragraphSpacing } from './layoutHelpers';

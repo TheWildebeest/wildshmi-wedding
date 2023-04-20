@@ -4,7 +4,7 @@ import React, { FC, PropsWithChildren } from "react"
 import goddessLakshmi from '@/../public/assets/images/goddess-lakshmi-2.jpg';
 import blingshmi from '@/../public/assets/images/blingshmi.jpg';
 import laughshmi from '@/../public/assets/images/laughshmi.jpg';
-import Image from "next/image";
+import kingdavid from '@/../public/assets/images/king-david.jpg';
 import { AccessibleImage } from "@/shared/components/AccessibleImage";
 
 const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => (
@@ -53,10 +53,17 @@ const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) =>
     </Paragraph>
     <Text tagName='h3' size='M'>David&lsquo;s origin story</Text>
     <Paragraph>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae totam nostrum dicta sunt corrupti laudantium, aliquid ipsum sed perspiciatis provident sint laboriosam voluptates perferendis quam esse eligendi minima voluptate maiores!
+      Though not a golden godess, David&lsquo;s name also comes with a hefty pedigree — that of David, King of Israel, from the Bible. The story goes that he rose from humble origins as a shepherd boy and there&lsquo;s a famous story about him using his shepherd&lsquo;s slingshot to kill the Phillistine giant Goliath.
+    </Paragraph>
+    <AccessibleImage image={kingdavid} altText="King David playing the harp" captionText="Biblical David was known to play the harp" />
+    <Paragraph>
+      Much like his namesake, David loves playing stringed instruments, the guitar in particular. He&lsquo;s learned to play one or two famous guitar solos quite well, and he is quite chuffed with himself as a result.
     </Paragraph>
     <Paragraph>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis?
+      One area where the regal and non-regal Davids differ is in the caliber of giants they pick as enemies. The only giant David has slain is his own expectations of becoming rich and successful before the age of 35.
+    </Paragraph>
+    <Paragraph>
+      David was born in Liverpool and grew up on the Isle of Man, where he loves to return to 
     </Paragraph>
     <Text tagName='h2' size='M'>November Cuties</Text>
     <Paragraph>
@@ -71,13 +78,13 @@ const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) =>
     <Text tagName='h2' size='M'>August Nupties</Text>
     <Paragraph>
       
-      </Paragraph>
-      <Paragraph>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae totam nostrum dicta sunt corrupti laudantium, aliquid ipsum sed perspiciatis provident sint laboriosam voluptates perferendis quam esse eligendi minima voluptate maiores!
-      </Paragraph>
-      <Paragraph>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis?
-      </Paragraph>
+    </Paragraph>
+    <Paragraph>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae totam nostrum dicta sunt corrupti laudantium, aliquid ipsum sed perspiciatis provident sint laboriosam voluptates perferendis quam esse eligendi minima voluptate maiores!
+    </Paragraph>
+    <Paragraph>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit molestias non repellat, cupiditate, inventore dolorum quia illo numquam nihil odit ratione in error, libero incidunt quaerat? Molestiae consequatur voluptate reiciendis?
+    </Paragraph>
 
     {children}
   </>
