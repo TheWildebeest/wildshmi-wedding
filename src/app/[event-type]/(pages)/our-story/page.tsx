@@ -28,7 +28,6 @@ const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) =>
     <Paragraph>
       Notwithstanding their underwhelming averageness, if you&lsquo;re not equally well acquainted with both Lakshmi and David, there are probably a couple of interesting facts about them that you don&lsquo;t know.
     </Paragraph>
-
     <Text tagName='h3' size='M'>Lakshmi&lsquo;s origin story</Text>
     <Paragraph>
       Lakshmi is named after the Hindu goddess of wealth. Below, you can see a traditional representation of Lakshmi — flush with cash, and remarkably zen about it. 
@@ -59,23 +58,23 @@ const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) =>
     </Paragraph>
     <Text tagName='h3' size='M'>David&lsquo;s origin story</Text>
     <Paragraph>
-      Though not a golden godess, David&lsquo;s name also comes with a hefty pedigree — that of David, King of Israel, from the Bible. The story goes that he rose from humble origins as a shepherd boy and there&lsquo;s a famous story about him using his shepherd&lsquo;s slingshot to kill the Phillistine giant Goliath.
+      Though not a golden godess, David&lsquo;s name also comes with a hefty pedigree — that of David, King of Israel, from the Bible. The story goes that he rose from humble origins as a shepherd boy and there&lsquo;s a famous story about him using his shepherd&lsquo;s slingshot to kill the phillistine giant Goliath.
     </Paragraph>
     <AccessibleImage image={kingdavid} altText="King David playing the harp" captionText="Biblical David was known to play the harp" />
     <Paragraph>
       Much like his namesake, David loves playing stringed instruments, the guitar in particular. He&lsquo;s learned to play one or two famous guitar solos quite well, and he is quite chuffed with himself as a result.
     </Paragraph>
     <Paragraph>
-      One area where the regal and non-regal Davids differ is in the caliber of giants they pick as enemies. The only giant David has slain is his own expectations of becoming rich and successful before the age of 35.
+      Perhaps the main area where the regal and non-regal Davids differ is in the caliber of giants they heave defeated. David reluctantly concedes the point that demolishing a footlong Subway sandwich really isn&lsquo;t as impressive as toppling Goliath.
     </Paragraph>
     <Paragraph>
-      David was born in Liverpool and grew up on the Isle of Man. After visiting China at the age of 16, he opted to study Chinese at the University of Cambridge. Cambridge was the 6th best university in the world during David&lsquo;s time there. Thankfully, nearly a decade on, Cambridge has recovered from the impact of David&lsquo;s tenure, and it now comes in at third place.
+      David was born in Liverpool and grew up on the Isle of Man. After visiting China at the age of 16, he opted to study Chinese at the University of Cambridge. Cambridge was the sixth best university in the world during David&lsquo;s time there. Thankfully, nearly a decade on, Cambridge has recovered from the impact of David&lsquo;s tenure, and it now comes in at third place.
     </Paragraph>
     <Paragraph>
       Starting his career in media sales, David spent three years selling digital advertising to clients in Jersey, Guernsey, London, and even the Isle of Man; eventually branching out further afield and visiting Moscow, Kuala Lumpur, Beijing, and Shanghai.
     </Paragraph>
     <Paragraph>
-      It was as stressful as it sounds, and David is relieved to be on the other side of a career change which he started in early 2019. He is now in his second job as a Software Developer and loves JavaScript almost as much as he once loved Mandarin Chinese, but far less than he loves his golden godess Lakshmi.
+      It was as stressful as it sounds, and David is relieved to be on the other side of a career change which he started in early 2019. Starting from scratch with a course in software development that he completed during the first lockdown, David is now gainfully employed in his second Software Developer role. He loves JavaScript almost as much as he once loved Mandarin Chinese, but far less than he loves his golden godess Lakshmi.
     </Paragraph>
     <Text tagName='h2' size='M'>How they met</Text>
     <Paragraph>
@@ -100,26 +99,23 @@ const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) =>
       The following two years, meanwhile, have seen David and Lakshmi get to know each other in real life. This has thankfully featured far less violence and fewer encounters with police (apart from that one time). Nevertheless, the journey has been equally if not more exhilarating, as they stepped outside their comfort zones, daring to trust and support one another enough to be able to start planning a future together.
     </Paragraph>
     <Paragraph>
-      In many ways, it has been all-or-nothing since the start. The day after their first date, a national lockdown was announced the very next day. This was the third such lockdown of the Covid-19 pandemic, and though we all knew the drill by this point, Lakshmi and David were faced forming a &ldquo;support bubble&rdquo; in order to be able to continue seeing each other, or waiting until after lockdown.
-    </Paragraph>
-    <Paragraph>
-      Who would have known that the humble bubble which once supported Lakshmi and David&lsquo;s nascent relationship was to be a progenitor of nuptials?
+      In many ways, it has been all-or-nothing since the start. The day after their first date, a national lockdown came into effect. This was the second such lockdown of the Covid-19 pandemic, and though we all knew the drill by this point, Lakshmi and David were faced with forming a &ldquo;support bubble&rdquo; in order to be able to continue seeing each other, or waiting until after lockdown. Who would have known that the humble bubble which once supported Lakshmi and David&lsquo;s nascent relationship was to be a progenitor of nuptials?
     </Paragraph>
     <Paragraph>
       Because of the lockdown, their first months were spent in close quarters at each others&lsquo; flats, playing games, cooking exotic meals together, watching TV shows. It was only later as restrictions eased that they began to venture out to explore the streets of East London, visiting the docks to feed the ducks, and taking evening strolls by the river and across Tower Bridge.
     </Paragraph>
     <Paragraph>
-      In the summer of 2022 they had the opportunity to meet each others&lsquo; parents, with Haridas and Latha flying over from Trivandrum and Chris and Martine from the Isle of Man, to spend some time testing the waters as in-laws. We knew it would work out when Martine&lsquo;s lentil sauce recipe found a new role to play as a lentil daal, accompanying Latha&lsquo;s lamb biryani.
+      In the summer of 2022 they had the opportunity to meet each others&lsquo; parents, with Haridas and Latha flying over from Trivandrum and Chris and Martine from the Isle of Man, to spend some time testing the waters as in-laws. We knew it would work out when David cooked dinner for the parents one evening and brought together both mother&lsquo;s signature recipes in one meal — Martine&lsquo;s lentil pasta sauce taking on a new role as daal, alongside Latha&lsquo;s lamb biryani.
     </Paragraph>
     <Text tagName='h2' size='M'>Getting engaged</Text>
     <Paragraph>
-      The decision to get married made happened naturally and gradually as Lakshmi and David got to know each other, but as 2022 drew to a close we started thinking making it a reality. 
+      The decision to get married made happened organically and gradually as Lakshmi and David got to know each other, but as 2022 drew to a close we started thinking of making it a reality. 
     </Paragraph>
     <Paragraph>
       2023 kicked off with choosing the date, and as February edged ever closer, David started planning a proper proposal to surprise Lakshmi with a ring on Valentine&lsquo;s day.
     </Paragraph>
     <Paragraph>
-      Booking the day off work for both of them, David arrange a day full of romantic activities — breakfast at sunrise in a 40th-floor restaraunt, a massage workshop with roses, prosecco, and chocolates, a game of Chess which he let Lakshmi win, and an afternoon tea with a special diamond-based desert!
+      Secretly booking the day off work for both of them, David arrange a day full of romantic activities — breakfast at sunrise in a fortieth-floor restaraunt, a massage workshop with roses, prosecco, and chocolates, a game of chess which <del>he let Lakshmi win</del> <ins style={{ textDecoration: 'none'}}>Lakshmi won fair and square</ins>, and an afternoon tea with a special diamond-based desert!
     </Paragraph>
     <Paragraph>
       It was the perfect day and we celebrated afterwards with another surprise — a trip back to where it all started at The Three Tuns, where Lakshmi&lsquo;s friends and colleagues were waiting with prosecco on standby to surprise her.
