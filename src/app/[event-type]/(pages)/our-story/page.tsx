@@ -2,8 +2,8 @@
 
 import { Paragraph } from "@/shared/components/Paragraph";
 import { Text } from "@/shared/components/Text";
-import React, { FC, PropsWithChildren } from "react"
-import goddessLakshmi from '@/../public/assets/images/goddess-lakshmi-2.jpg';
+import React, { FC } from "react"
+import goddessLakshmi from '@/../public/assets/images/goddess-lakshmi.jpg';
 import blingshmi from '@/../public/assets/images/blingshmi.jpg';
 import laughshmi from '@/../public/assets/images/laughshmi.jpg';
 import kingdavid from '@/../public/assets/images/king-david.jpg';
@@ -11,10 +11,10 @@ import { AccessibleImage } from "@/shared/components/AccessibleImage";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => {
+const OurStoryPage: FC = () => {
   const basePath = usePathname()?.replace('/our-story', '');
 
-  return <>
+  return <div className='max-w-[50em] mx-auto'>
     <Text tagName='h2' size='L'>Beginnings</Text>
     <Paragraph>
       All of the greatest heroes have a really cool origin story.
@@ -126,8 +126,6 @@ const OurStoryPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) =>
     <Paragraph>
       
     </Paragraph>
-
-    {children}
-  </>
+  </div>
 }
 export default OurStoryPage;

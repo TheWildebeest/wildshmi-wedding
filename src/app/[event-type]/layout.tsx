@@ -12,7 +12,6 @@ export function generateStaticParams() {
     { 'event-type': 'wedding-reception'},
   ] 
 }
-
 export const dynamicParams = false;
 
 const WeddingLandingPage = ({children, params}: Props) => {

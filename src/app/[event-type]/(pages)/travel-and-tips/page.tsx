@@ -1,5 +1,5 @@
-import React, { FC, PropsWithChildren } from "react"
+import React, { FC } from "react"
 
-const TravelAndTipsPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => <>{children}</>
+const TravelAndTipsPage: FC = () => <>{}</>
 
 export default TravelAndTipsPage;

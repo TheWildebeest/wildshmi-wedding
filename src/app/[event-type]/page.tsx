@@ -1,16 +1,12 @@
 "use client"
 import Invitation from '@/shared/components/client/Invitation';
 import { Text } from '@/shared/components/Text';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import Image from 'next/image'
 import rose from '../../../public/assets/images/rose-1.webp';
 
-interface Props {
-  params: { eventType: 'wedding'|'wedding-reception' }
-  children: ReactNode,
-}
 
-const WeddingPage: FC<Props> = ({ children, params }: Props) => (
+const WeddingPage: FC = () => (
   <>
     <Invitation></Invitation>
     <div className='text-center w-100'>
@@ -30,7 +26,6 @@ const WeddingPage: FC<Props> = ({ children, params }: Props) => (
     </Text>
 
     </div>
-      {children}
   </>
 );
 

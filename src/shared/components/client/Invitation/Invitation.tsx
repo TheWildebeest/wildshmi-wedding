@@ -9,9 +9,9 @@ import fonts from '@/shared/fonts';
 export const Invitation = () => {
   const { arima } = fonts;
   const eventName = EventNames[(useContext(InvitationContext))]
-  const res: Response = use(fetch("http://localhost:3000/api/invitation"));
-  const data: Data = use(res.json());
-  console.log('Fetched data: ', data.url)
+  // const res: Response = use(fetch("http://localhost:3000/api/invitation"));
+  // const data: Data = use(res.json());
+  // console.log('Fetched data: ', data.url)
   return (
     <div className={'text-center ' + arima}>
       <Text tagName='div' size='M'>You are warmly invited to join</Text>

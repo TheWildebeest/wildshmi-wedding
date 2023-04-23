@@ -1,5 +1,5 @@
-import React, { FC, PropsWithChildren } from "react"
+import React, { FC } from "react"
 
-const GiftsPage: FC<PropsWithChildren> = ({ children }: PropsWithChildren) => <>{children}</>
+const GiftsPage: FC = () => <>{}</>
 
 export default GiftsPage;
