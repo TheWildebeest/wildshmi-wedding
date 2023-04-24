@@ -105,7 +105,7 @@ const OurStoryPage: FC = () => {
       Because of the lockdown, their first months were spent in close quarters at each others&lsquo; flats, playing games, cooking exotic meals together, watching TV shows. It was only later as restrictions eased that they began to venture out to explore the streets of East London, visiting the docks to feed the ducks, and taking evening strolls by the river and across Tower Bridge.
     </Paragraph>
     <Paragraph>
-      In the summer of 2022 they had the opportunity to meet each others&lsquo; parents, with Haridas and Latha flying over from Trivandrum and Chris and Martine from the Isle of Man, to spend some time testing the waters as in-laws. We knew it would work out when David cooked dinner for the parents one evening and brought together both mother&lsquo;s signature recipes in one meal — Martine&lsquo;s lentil pasta sauce taking on a new role as daal, alongside Latha&lsquo;s lamb biryani.
+      In the summer of 2022 they had the opportunity to meet each others&lsquo; parents, with Haridas and Latha flying over from Trivandrum and Chris and Martine from the Isle of Man, to spend some time testing the waters as in-laws. We knew it would work out when David cooked dinner for the parents one evening and brought together both mothers&lsquo; signature recipes in one meal — Martine&lsquo;s lentil pasta sauce taking on a new role as daal, alongside Latha&lsquo;s lamb biryani.
     </Paragraph>
     <Text tagName='h2' size='M'>Getting engaged</Text>
     <Paragraph>
