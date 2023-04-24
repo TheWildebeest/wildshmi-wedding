@@ -4,7 +4,7 @@ import localFont from "@next/font/local"
 import babyLakshmi from "/public/assets/images/baby-lakshmi.webp"
 import babyDavid from "/public/assets/images/baby-david.webp"
 
-const annissaScript = localFont({ src: "../../public/assets/fonts/annisa.otf"})
+import fonts from '@/shared/fonts'
 
 export default function Root() {
   return (
@@ -25,7 +25,7 @@ export default function Root() {
           </div>
         </div>
         <div className="w-auto h-screen grid place-items-center text-center">
-          <header className={annissaScript.className}>
+          <header className={fonts.annissaScript}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               <span className="text-red-500"> David Wildman{"\n"}</span>
               <br />
