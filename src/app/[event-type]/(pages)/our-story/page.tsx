@@ -105,20 +105,20 @@ const OurStoryPage: FC = () => {
       Because of the lockdown, their first months were spent in close quarters at each others&lsquo; flats, playing games, cooking exotic meals together, watching TV shows. It was only later as restrictions eased that they began to venture out to explore the streets of East London, visiting the docks to feed the ducks, and taking evening strolls by the river and across Tower Bridge.
     </Paragraph>
     <Paragraph>
-      In the summer of 2022 they had the opportunity to meet each others&lsquo; parents, with Haridas and Latha flying over from Trivandrum and Chris and Martine from the Isle of Man, to spend some time testing the waters as in-laws. We knew it would work out when David cooked dinner for the parents one evening and brought together both mothers&lsquo; signature recipes in one meal — Martine&lsquo;s lentil pasta sauce taking on a new role as daal, alongside Latha&lsquo;s lamb biryani.
+      In the summer of 2022 they had the opportunity to meet each others&lsquo; parents, with Haridas and Latha flying over from Trivandrum and Chris and Martine from the Isle of Man, to spend some time testing the waters as in-laws. They knew it would work out when David cooked dinner for the parents one evening and brought together both mothers&lsquo; signature recipes in one meal — Martine&lsquo;s lentil pasta sauce taking on a new role as daal, alongside Latha&lsquo;s lamb biryani.
     </Paragraph>
     <Text tagName='h2' size='M'>Getting engaged</Text>
     <Paragraph>
-      The decision to get married made happened organically and gradually as Lakshmi and David got to know each other, but as 2022 drew to a close we started thinking of making it a reality. 
+      The decision to get married happened organically and gradually as Lakshmi and David got to know each other, but as 2022 drew to a close they started thinking of making it a reality. 
     </Paragraph>
     <Paragraph>
       2023 kicked off with choosing the date, and as February edged ever closer, David started planning a proper proposal to surprise Lakshmi with a ring on Valentine&lsquo;s day.
     </Paragraph>
     <Paragraph>
-      Secretly booking the day off work for both of them, David arrange a day full of romantic activities — breakfast at sunrise in a fortieth-floor restaraunt, a massage workshop with roses, prosecco, and chocolates, a game of chess which <del>he let Lakshmi win</del> <ins style={{ textDecoration: 'none'}}>Lakshmi won fair and square</ins>, and an afternoon tea with a special diamond-based desert!
+      Secretly booking the day off work for both of them, David arrange a day full of romantic activities — breakfast at sunrise in a fortieth-floor restaraunt, a massage workshop with roses, prosecco, and chocolates, a game of chess which <del>he let Lakshmi win</del> <ins style={{ textDecoration: 'none'}}>Lakshmi won fair and square</ins>, and an afternoon tea with a special diamond-based dessert!
     </Paragraph>
     <Paragraph>
-      It was the perfect day and we celebrated afterwards with another surprise — a trip back to where it all started at The Three Tuns, where Lakshmi&lsquo;s friends and colleagues were waiting with prosecco on standby to surprise her.
+      It was the perfect day and they celebrated afterwards with another surprise — a trip back to where it all started at The Three Tuns, where Lakshmi&lsquo;s friends and colleagues were waiting with prosecco on standby to surprise her.
     </Paragraph>
     <Paragraph>
       Going straight from one whirlwind experience to another, David and Lakshmi then jetted off to India in March 2023 along with David&lsquo;s parents and three siblings for an &ldquo;official&rdquo; engagement ceremony with Lakshmi&lsquo;s extended family. You can check these out on the <Link href={{ pathname: basePath + '/photos' }}>photos</Link> page.
