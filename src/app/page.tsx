@@ -27,9 +27,9 @@ export default function Root() {
         <div className="w-auto h-screen grid place-items-center text-center">
           <header className={fonts.annissaScript}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-              <span className="text-red-500"> David Wildman{"\n"}</span>
+              <span className="text-indigo-800"> David Wildman{"\n"}</span>
               <br />
-              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-purple-500">&{"\n"}</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-indigo-800">&{"\n"}</span>
               <br />
               <span className="text-indigo-800">Lakshmi Haridas</span>
             </h1>
