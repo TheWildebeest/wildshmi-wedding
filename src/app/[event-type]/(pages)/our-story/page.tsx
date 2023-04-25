@@ -5,13 +5,19 @@ import { Text } from "@/shared/components/Text";
 import React, { FC } from "react"
 import goddessLakshmi from '@/../public/assets/images/goddess-lakshmi.jpg';
 import blingshmi from '@/../public/assets/images/blingshmi.jpg';
+import beautyshmi from '@/../public/assets/images/beautyshmi.jpg';
 import laughshmi from '@/../public/assets/images/laughshmi.jpg';
 import kingdavid from '@/../public/assets/images/king-david.jpg';
+import violindavid from '@/../public/assets/images/violin.jpg';
+// import birthdaysingers from '@/../public/assets/images/birthday-singers.jpg';
+import codingdavid from '@/../public/assets/images/code-and-sleep.jpg';
 import { AccessibleImage } from "@/shared/components/AccessibleImage";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import fonts from "@/shared/fonts";
 
 const OurStoryPage: FC = () => {
+  const { merienda } = fonts
   const basePath = usePathname()?.replace('/our-story', '');
 
   return <div className='max-w-[50em] mx-auto'>
@@ -45,28 +51,28 @@ const OurStoryPage: FC = () => {
     <Paragraph>
       Born in Thiruvananthapuram, capital of the state of Kerala in India, Lakshmi is a true citizen of the world. She spent her childhood between India and Oman, and spent a year in South Africa as a late teenager. She left to study in Singapore, where she then worked for a number of years, before moving to Hong Kong and then finally to London. 
     </Paragraph>
-    <AccessibleImage image={blingshmi} altText='Lakshmi wearing gold jewelry' captionText='An actual Lakshmi with actual gold bling' />
+    <AccessibleImage image={blingshmi} altText='Lakshmi casually trying on jewelry' captionText='An actual Lakshmi with actual gold bling' />
+    <AccessibleImage image={beautyshmi} altText='Lakshmi wearing gold jewelry on her engagement day' captionText='Looking incredible on her engagement day' />
     <Paragraph>
-      Despite being something of a rebel during her school days, the sheer strength of her fierce intelligence propelled her to success, winning a scholarship to study one of the most highly ranked Computer Science courses in the world at the National University of Singapore. As an <strong>A</strong>lumnus of the <strong>N</strong>ational <strong>U</strong>niversity of <strong>S</strong>ingapore, Lakshmi lays claim to a status the pedagogical pedigree of which is as impressive as its acronym is unfortunate.
+      Despite being something of a rebel during her school days, the sheer strength of her fierce intelligence propelled her to success, winning a scholarship to study one of the most highly ranked Computer Science courses in the world at the National University of Singapore. As an Alumnus of the National University of Singapore, Lakshmi lays claim to a status whose pedagogical pedigree is as impressive as its acronym is unfortunate.
     </Paragraph>
     <Paragraph>
       What does a bona-fide goddess of wealth look for in a man, than? Fortunately for David, she cares more about personality than paycheck, and even then, the personality requirements aren&lsquo;t particularly stringent. From as early as she can remember, Lakshmi has always known what see wanted in a man. At school when her friends would ask her what type of guy she wanted to marry, her answer was always the same: &ldquo;A funny guy&rdquo;.
     </Paragraph>
     <AccessibleImage image={laughshmi} altText="Lakshmi laughing at her boyfriend&lsquo;s jokes" captionText="Lakshmi and a funny guy" />
-    <Paragraph>
-      
-    </Paragraph>
     <Text tagName='h3' size='M'>David&lsquo;s origin story</Text>
     <Paragraph>
-      Though not a golden godess, David&lsquo;s name also comes with a hefty pedigree — that of David, King of Israel, from the Bible. The story goes that he rose from humble origins as a shepherd boy and there&lsquo;s a famous story about him using his shepherd&lsquo;s slingshot to kill the phillistine giant Goliath.
+      Though not a golden goddess, David&lsquo;s name also comes with a hefty pedigree — that of David, King of Israel, from the Bible. The story goes that he rose from humble origins as a shepherd boy and there&lsquo;s a famous story about him using his shepherd&lsquo;s slingshot to kill the phillistine giant Goliath.
     </Paragraph>
     <AccessibleImage image={kingdavid} altText="King David playing the harp" captionText="Biblical David was known to play the harp" />
     <Paragraph>
-      Much like his namesake, David loves playing stringed instruments, the guitar in particular. He&lsquo;s learned to play one or two famous guitar solos quite well, and he is quite chuffed with himself as a result.
-    </Paragraph>
-    <Paragraph>
       Perhaps the main area where the regal and non-regal Davids differ is in the caliber of giants they heave defeated. David reluctantly concedes the point that demolishing a footlong Subway sandwich really isn&lsquo;t as impressive as toppling Goliath.
     </Paragraph>
+    <Paragraph>
+      Much like his namesake, though, David loves playing stringed instruments, the guitar in particular. He&lsquo;s learned to play one or two famous guitar solos quite well, and he is quite pretty chuffed with this achievement.
+    </Paragraph>
+    <AccessibleImage image={violindavid} altText="David playing violin" captionText="David... that&lsquo;s not even a guitar" />
+    {/* <AccessibleImage image={birthdaysingers} altText='David and his siblings singing' captionText='The Wildman siblings singing' /> */}
     <Paragraph>
       David was born in Liverpool and grew up on the Isle of Man. After visiting China at the age of 16, he opted to study Chinese at the University of Cambridge. Cambridge was the sixth best university in the world during David&lsquo;s time there. Thankfully, nearly a decade on, Cambridge has recovered from the impact of David&lsquo;s tenure, and it now comes in at third place.
     </Paragraph>
@@ -74,11 +80,12 @@ const OurStoryPage: FC = () => {
       Starting his career in media sales, David spent three years selling digital advertising to clients in Jersey, Guernsey, London, and even the Isle of Man; eventually branching out further afield and visiting Moscow, Kuala Lumpur, Beijing, and Shanghai.
     </Paragraph>
     <Paragraph>
-      It was as stressful as it sounds, and David is relieved to be on the other side of a career change which he started in early 2019. Starting from scratch with a course in software development that he completed during the first lockdown, David is now gainfully employed in his second Software Developer role. He loves JavaScript almost as much as he once loved Mandarin Chinese, but far less than he loves his golden godess Lakshmi.
+      It was as stressful as it sounds, and David is relieved to be on the other side of a career change which he started in early 2019. Starting from scratch with a course in software development that he completed during the first lockdown, David is now gainfully employed in his second Software Developer role. He loves JavaScript almost as much as he once loved Mandarin Chinese, but far less than he loves his golden goddess Lakshmi.
     </Paragraph>
+    <AccessibleImage image={codingdavid} altText="David reading a magazine with Lakshmi sleeping next to hoim" captionText="Some bedtime reading" />
     <Text tagName='h2' size='M'>How they met</Text>
-    <Paragraph>
-    &ldquo;We met the old fashioned way — on Tinder!&rdquo;
+    <Paragraph className={merienda}>
+      &ldquo;We met the old fashioned way — on Tinder!&rdquo;
     </Paragraph>
     <Paragraph>
       Lakshmi and David have been together (pretty much literally) from when they first met in the Three Tuns pub in Aldgate East in London, on November 3rd 2020.
@@ -121,10 +128,16 @@ const OurStoryPage: FC = () => {
       It was the perfect day and they celebrated afterwards with another surprise — a trip back to where it all started at The Three Tuns, where Lakshmi&lsquo;s friends and colleagues were waiting with prosecco on standby to surprise her.
     </Paragraph>
     <Paragraph>
-      Going straight from one whirlwind experience to another, David and Lakshmi then jetted off to India in March 2023 along with David&lsquo;s parents and three siblings for an &ldquo;official&rdquo; engagement ceremony with Lakshmi&lsquo;s extended family. You can check these out on the <Link href={{ pathname: basePath + '/photos' }}>photos</Link> page.
+      Going straight from one whirlwind experience to another, David and Lakshmi then jetted off to India in March 2023 along with David&lsquo;s parents, sister, and two brothers, for an &ldquo;official&rdquo; engagement ceremony with Lakshmi&lsquo;s extended family.
     </Paragraph>
     <Paragraph>
-      
+      You can check out the photos from the proposal and the engagement party on the <Link href={{ pathname: basePath + '/photos' }}>photos page</Link>.
+    </Paragraph>
+    <Paragraph>
+      Then, make sure you fill in the RSVP form so you can join Lakshmi and David in creating more happy memories (and taking more awesome photos) with them at the wedding on 26 August.
+    </Paragraph>
+    <Paragraph className={merienda}>
+      &ldquo;We can&lsquo;t wait to see you there — it&lsquo;s going to be a blast!&rdquo;
     </Paragraph>
   </div>
 }

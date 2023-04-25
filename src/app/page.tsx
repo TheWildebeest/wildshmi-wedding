@@ -1,5 +1,4 @@
 import Image from "next/image";
-import localFont from "@next/font/local"
 
 import babyLakshmi from "/public/assets/images/baby-lakshmi.webp"
 import babyDavid from "/public/assets/images/baby-david.webp"

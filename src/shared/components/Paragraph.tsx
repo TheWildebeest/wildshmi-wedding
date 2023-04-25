@@ -16,6 +16,6 @@ const defaultClasses = [
 
 export const Paragraph: FC<Props> = ({children, className = '' }: Props) => {
   return (
-      <p className={defaultClasses.join(' ').concat(className)}>{ children }</p>
+      <p className={defaultClasses.join(' ').concat(' ' + className)}>{ children }</p>
   )
 }

@@ -14,6 +14,10 @@
    */
   --wildshmi-secondary: #edb3b6;
   /**
+   * Blue
+   */
+  --wildshmi-link: #14248a;
+  /**
    * Black
    */
   --wildshmi-black: #2a2b2a;
@@ -39,6 +43,11 @@ hr {
 caption, figcaption {
   font-style: italic;
   line-height: unset;
+}
+
+main a {
+  color: var(--wildshmi-link);
+  text-decoration: underline;
 }
 
 .hearts {

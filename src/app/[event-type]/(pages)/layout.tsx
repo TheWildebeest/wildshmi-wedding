@@ -7,7 +7,7 @@ import { Href } from "@/shared/models";
 import fonts from "@/shared/fonts";
 
 const MainPageLayout: FC<PropsWithChildren> = ({children}: PropsWithChildren) => {
-  const {arima} = fonts
+  const { arima } = fonts
   const slug = useSelectedLayoutSegment() || '';
   const title = dataProvider.getPageTitles()[slug as Href]
   return (

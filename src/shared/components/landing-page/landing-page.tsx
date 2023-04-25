@@ -23,6 +23,16 @@ const LandingPage: FC<Props> = ({children, eventType}: Props) => {
           >
           { children }
         </main>
+        <footer>
+          <hr />
+          <br />
+          <br />
+          <div className='w-100 text-center'>
+            The Wildshmi Wedding 2023
+          </div>
+          <br />
+          <br />
+        </footer>
       </InvitationContextProvider>
     </>
   )
