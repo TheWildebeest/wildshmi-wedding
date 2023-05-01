@@ -11,7 +11,7 @@ import fonts from "@/shared/fonts";
 
 const WeddingPage: FC = () => {
   const basePath = usePathname();
-  const { merienda } = fonts
+  const { arima } = fonts
   return (
   <>
     <Invitation></Invitation>
@@ -60,7 +60,7 @@ const WeddingPage: FC = () => {
               boxShadow: '0 0 2em var(--wildshmi-primary), 0 0 1.5em var(--wildshmi-secondary), 0 0 1em black'
             }}
             href={{ pathname: basePath + '/rsvp' }}>
-            <span className={merienda}>RSVP</span>
+            <span className={arima}>RSVP</span>
           </Link>
           </div>
         </div>

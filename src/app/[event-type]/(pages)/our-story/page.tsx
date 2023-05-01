@@ -157,8 +157,8 @@ const OurStoryPage: FC = () => {
     </Paragraph>
     <AccessibleImage image={keralacuties} altText="Sunset in Kerala" captionText="The view from Lakshmi&lsquo;s rooftop in Kerala" />
 
-    <Paragraph className={merienda}>
-      &ldquo;We can&lsquo;t wait to see you there — it&lsquo;s going to be a blast!&rdquo;
+    <Paragraph>
+      <span className={merienda}>&ldquo;We can&lsquo;t wait to see you there!&rdquo;</span> — David and Lakshmi
     </Paragraph>
   </div>
 }
