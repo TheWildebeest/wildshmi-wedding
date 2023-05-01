@@ -9,7 +9,7 @@ import beautyshmi from '@/../public/assets/images/beautyshmi.jpg';
 import laughshmi from '@/../public/assets/images/laughshmi.jpg';
 import kingdavid from '@/../public/assets/images/king-david.jpg';
 import violindavid from '@/../public/assets/images/violin.jpg';
-import birthdaysingers from '@/../public/assets/images/birthday-singers.jpg';
+import ceremony from '@/../public/assets/images/ceremony.jpg';
 import codingdavid from '@/../public/assets/images/code-and-sleep.jpg';
 import threetuns from '@/../public/assets/images/three-tuns-outside.jpg';
 import keralacuties from '@/../public/assets/images/kerala-cuties.jpg';
@@ -148,7 +148,7 @@ const OurStoryPage: FC = () => {
     <Paragraph>
       Going straight from one whirlwind experience to another, David and Lakshmi then jetted off to India in March 2023 along with David&lsquo;s parents, sister, and two brothers, for an &ldquo;official&rdquo; engagement ceremony with Lakshmi&lsquo;s extended family. This conveniently doubled up as a massive birthday bash for Lakshmi&lsquo;s mother Latha.
     </Paragraph>
-    <AccessibleImage image={birthdaysingers} altText="David and his siblings" captionText="Singing happy birthday to Lakshmi&lsquo;s mum" />
+    <AccessibleImage image={ceremony} altText="Both families together at the engagement ceremony" captionText="Both families together at the engagement ceremony" />
     <Paragraph>
       You can check out the photos from the proposal and the engagement party on the <Link href={{ pathname: basePath + '/photos' }}>photos page</Link>.
     </Paragraph>
