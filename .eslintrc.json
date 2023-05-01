@@ -3,5 +3,6 @@
   "extends": ["eslint:recommended", "prettier", "next/core-web-vitals"],
   "rules": {
     "no-undef": "off"
-  }
+  },
+  "ignorePatterns": ["*.json"]
 }
