@@ -30,7 +30,7 @@ const OurStoryPage: FC = () => {
   return (
     <div className="max-w-[50em] mx-auto">
       <Text tagName="h2" size="L">
-        👶 Beginnings
+        👶🏼 Beginnings 👶🏾
       </Text>
       <Paragraph>
         All of the greatest heroes have a really cool origin story.
