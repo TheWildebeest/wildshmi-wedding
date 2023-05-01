@@ -54,7 +54,7 @@ const WeddingPage: FC = () => {
               width: '30%',
               height: 'max-content',
               background: 'rgba(0, 0, 0, 0.5)',
-              border: '2px solid white',
+              border: '3px solid white',
               color: 'white',
               textDecoration:'unset',
               boxShadow: '0 0 85px var(--wildshmi-primary), 0 0 65px var(--wildshmi-secondary), 0 0 25px black'
