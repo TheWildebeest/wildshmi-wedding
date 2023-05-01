@@ -4,8 +4,8 @@ const nextConfig = {
     appDir: true,
   },
   async headers() {
-    return []
+    return [];
   },
-}
+};
 
 module.exports = nextConfig;
