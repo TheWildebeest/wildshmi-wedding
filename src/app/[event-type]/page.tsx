@@ -57,7 +57,7 @@ const WeddingPage: FC = () => {
               border: '3px solid white',
               color: 'white',
               textDecoration:'unset',
-              boxShadow: '0 0 85px var(--wildshmi-primary), 0 0 65px var(--wildshmi-secondary), 0 0 25px black'
+              boxShadow: '0 0 2em var(--wildshmi-primary), 0 0 1.5em var(--wildshmi-secondary), 0 0 1em black'
             }}
             href={{ pathname: basePath + '/rsvp' }}>
             <span className={merienda}>RSVP</span>
