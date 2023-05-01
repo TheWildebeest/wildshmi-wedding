@@ -1,7 +1,7 @@
-"use client"
-import React, { FC } from "react"
+"use client";
+import React, { FC } from "react";
 
-const ContactPage: FC = () => <></>
+const ContactPage: FC = () => <></>;
 
 export default ContactPage;
 

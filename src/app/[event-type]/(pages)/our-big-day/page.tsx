@@ -1,5 +1,5 @@
-import React, { FC } from "react"
+import React, { FC } from "react";
 
-const OurBigDayPage: FC = () => <>{}</>
+const OurBigDayPage: FC = () => <>{}</>;
 
 export default OurBigDayPage;

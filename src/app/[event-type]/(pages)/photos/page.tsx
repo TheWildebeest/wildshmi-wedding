@@ -1,5 +1,5 @@
-import React, { FC } from "react"
+import React, { FC } from "react";
 
-const TravelAndTipsPage: FC = () => <>{}</>
+const TravelAndTipsPage: FC = () => <>{}</>;
 
 export default TravelAndTipsPage;

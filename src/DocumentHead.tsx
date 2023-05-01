@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export const DocumentHead = ({children}: { children?: ReactNode }) => {
+export const DocumentHead = ({ children }: { children?: ReactNode }) => {
   return (
     <>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -8,5 +8,5 @@ export const DocumentHead = ({children}: { children?: ReactNode }) => {
       <link rel="icon" href="/favicon.ico" />
       {children}
     </>
-  )
-}
+  );
+};

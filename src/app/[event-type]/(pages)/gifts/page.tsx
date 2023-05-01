@@ -1,5 +1,5 @@
-import React, { FC } from "react"
+import React, { FC } from "react";
 
-const GiftsPage: FC = () => <>{}</>
+const GiftsPage: FC = () => <>{}</>;
 
 export default GiftsPage;

@@ -1,1 +1,1 @@
-export { AccessibleImage } from './AccessibleImage';
+export { AccessibleImage } from "./AccessibleImage";
