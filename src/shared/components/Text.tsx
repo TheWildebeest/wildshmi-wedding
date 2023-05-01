@@ -1,4 +1,3 @@
-import fonts from '@/shared/fonts'
 import React, { FC, PropsWithChildren } from "react";
 
 type Size = 'XXXS' | 'XXS' | 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL' | 'XXXXL';

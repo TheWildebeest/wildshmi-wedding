@@ -24,14 +24,15 @@ const LandingPage: FC<Props> = ({children, eventType}: Props) => {
           { children }
         </main>
         <footer>
+          <br />
           <hr />
           <br />
-          <br />
           <div className='w-100 text-center'>
-            The Wildshmi Wedding 2023
+          © David Wildman and Lakshmi Haridas 2023
           </div>
           <br />
-          <br />
+
+          <hr />
         </footer>
       </InvitationContextProvider>
     </>
