@@ -1,7 +1,7 @@
-import { AccessibleImage } from "@/shared/components/AccessibleImage";
 import { Paragraph } from "@/shared/components/Paragraph";
 import { Text } from "@/shared/components/Text";
 import fonts from "@/shared/fonts";
+import Link from "next/link";
 import React, { FC } from "react";
 
 const TravelAndTipsPage: FC = () => {
@@ -19,252 +19,275 @@ const TravelAndTipsPage: FC = () => {
       </Text>
       <Paragraph>
         Most international flights terminate at Gatwick or Heathrow, which are
-        the most convenient airports to fly in to.
+        the most convenient airports to fly in to. Both airports have a premium
+        &ldquo;express&rdquo; train service to central London, but there are
+        also regular train services which are generally cheaper and more
+        convenient, as well as taxi and bus services.
       </Paragraph>
-      <Paragraph>
-        Both airports have an express train service connecting to central
-        London, for which you have to buy a ticket in advance, in addition to
-        regular train services.
-      </Paragraph>
-      <Text tagName="h3" size="M">
-        Gatwick
-      </Text>
-      <Paragraph></Paragraph>
-      <Paragraph>
-        You can also just take a regular train service, and use your contactless
-        card to tap in at the station. Look for the Elizabeth Line at Heathrow,
-        or at Gatwick follow the signs for Trains and the South Terminal.
+      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
+        ℹ️ <strong>Good to know:</strong> For the Gatwick Express and Heathrow
+        Express you need to purchase a ticket before boarding the train,
+        otherwise you will receive a fine.
       </Paragraph>
       <Text tagName="h3" size="M">
-        Heathrow
+        ✈️ Gatwick
       </Text>
       <Paragraph>
-        You ca Stansted and Luton are two other airports which also serve
-        London-bound travellers. From there, you can take a taxi or public
-        transportation such as the Tube or a train to your hotel or
-        accommodation. Contactless card payment is accepted at the fairgates and
-        in taxis.
+        Train services at Gatwick run from the South Terminal. Transport between
+        the terminals is free — just follow the signs.
       </Paragraph>
       <Paragraph>
-        Parents will frequently bestow daughters with this providential namesake
-        in the hope of manifesting a destiny that sees them grow up to become
-        rich and successful.
+        The <Link href="https://www.gatwickexpress.com/">Gatwick express</Link>{" "}
+        runs direct to London Victoria, which is close to Westminster and
+        Buckingham Palace — a great option if you want to start with some
+        sightseeing. Travel takes 30 minutes.
       </Paragraph>
       <Paragraph>
-        Imagine, growing up seeing your name associated primarily with a literal
-        goddess who has gold coins pouring out of her hands. You&lsquo;d be
-        forgiven for occasionally wondering whether this might be a hard act to
-        follow.
+        Alternatively, you can take a regular train service. Thameslink trains
+        run to London Bridge, which has great transport links to the rest of
+        London. This is a good option if you are heading to a hotel in Greenwich
+        or somewhere else nearby the wedding reception venue.
       </Paragraph>
       <Paragraph>
-        Not so for <i>this</i> Lakshmi, who has made it her life&lsquo;s goal to
-        place the mother of all ticks in the archetypes box by pursuing a career
-        in investment banking. At the time of writing, she&lsquo;s a VP in
-        Electronic Trading at Bank of America. It sounds impressive, though
-        no-one actually knows what it means.
-      </Paragraph>
-      <Paragraph>
-        Born in Thiruvananthapuram, capital of the state of Kerala in India,
-        Lakshmi is a true citizen of the world. She spent her childhood between
-        India, South Africa, and Oman, and left to study in Singapore, where she
-        then worked for a number of years. In 2017 she moved to Hong Kong for a
-        couple of years, before relocating to London.
-      </Paragraph>
-      <Paragraph>
-        Lakshmi had been something of a rebel during her school days. When the
-        time came to apply to universities, a family friend suggested she apply
-        to a relatively mediocre university (NTU) in Singapore. Instead, she
-        ended up accidentally applying to one of the top ten Engineering courses
-        in the world, and winning a full scholarship that propelled her to
-        success. As an Alumnus of the National University of Singapore, Lakshmi
-        lays claim to a status whose pedagogical pedigree is as impressive as
-        its acronym is unfortunate.
-      </Paragraph>
-      <Paragraph>
-        What does a bona-fide goddess of wealth look for in a man, than?
-        Fortunately for David, she cares more about personality than paycheck,
-        and even then, the personality requirements aren&lsquo;t particularly
-        stringent. From as early as she can remember, Lakshmi has always known
-        what see wanted in a man. At school when her friends would ask her what
-        type of guy she wanted to marry, her answer was always the same:
-        &ldquo;A funny guy&rdquo;.
+        For regular train services (i.e. anything other than Gatwick Express),
+        you can just tap in at the gates with your contactless debit/credit
+        card. Just make sure you tap out at your destination too. Travel to
+        London takes roughly 45 minutes for regular train services.
       </Paragraph>
       <Text tagName="h3" size="M">
-        David&lsquo;s origin story
+        ✈️ Heathrow
       </Text>
       <Paragraph>
-        Though not a golden goddess, David&lsquo;s name also comes with a hefty
-        pedigree — that of David, King of Israel, from the Bible. The story goes
-        that he rose from humble origins as a shepherd boy and there&lsquo;s a
-        famous story about him using his shepherd&lsquo;s slingshot to kill the
-        phillistine giant Goliath.
+        The <Link href="https://www.heathrowexpress.com">Heathrow express</Link>{" "}
+        runs direct to London Paddington and takes only 15 minutes. From there
+        you can take a stroll in Hyde Park or Regent&lsquo;s Park, or head over
+        to Baker Street and check out the Sherlock Holmes Museum.
       </Paragraph>
       <Paragraph>
-        Perhaps the main area where the regal and non-regal Davids differ is in
-        the caliber of giants they heave defeated. David reluctantly concedes
-        the point that demolishing a footlong Subway sandwich really isn&lsquo;t
-        as impressive as toppling Goliath.
+        If you&lsquo;re not in a rush, you can instead take the Elizabeth Line,
+        which also runs to Paddington as well as other stops, including Bond
+        Street. For this option, you can just tap in at the gates with your
+        contactless debit/credit card, and then tap out at your destination.
       </Paragraph>
       <Paragraph>
-        Much like his namesake, though, David loves playing stringed
-        instruments, the guitar in particular. He&lsquo;s learned to play one or
-        two famous guitar solos quite well, and he is quite pretty chuffed with
-        this achievement.
+        You can even take the London Underground or &ldquo;tube&rdquo; from
+        Heathrow via the Picadilly Line. Again, just tap in and out with your
+        contactless card. This will be much slower, but much cheaper too.
+      </Paragraph>
+      <Text tagName="h2" size="L">
+        🏙️ Getting around London
+      </Text>
+      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
+        ℹ️ <strong>Good to know:</strong> Using Google Maps or CityMapper will
+        make it much easier getting around by bus and tube.
       </Paragraph>
       <Paragraph>
-        David was born in Liverpool and grew up on the Isle of Man. After
-        visiting China at the age of 16, he opted to study Chinese at the
-        University of Cambridge. Cambridge was the sixth best university in the
-        world during David&lsquo;s time there. Thankfully, nearly a decade on,
-        Cambridge has recovered from the impact of David&lsquo;s tenure, and it
-        now comes in at third place.
+        It is not necessary to purchase an Oyster Card or other form of travel
+        card when visiting London these days. It&lsquo;s far more convenient and
+        equally cost-effective to use a contactless debit or credit card or
+        device for getting around the city.
       </Paragraph>
       <Paragraph>
-        Starting his career in media sales, David spent three years selling
-        digital advertising to clients in Jersey, Guernsey, London, and even the
-        Isle of Man; eventually branching out further afield and visiting
-        Moscow, Kuala Lumpur, Beijing, and Shanghai.
-      </Paragraph>
-      <Paragraph>
-        It was as stressful as it sounds, and David is relieved to be on the
-        other side of a career change which he started in early 2019. Starting
-        from scratch with a course in software development that he completed
-        during the first lockdown, David is now gainfully employed in his second
-        Software Developer role. He loves JavaScript almost as much as he once
-        loved Mandarin Chinese, but far less than he loves his golden goddess
-        Lakshmi.
+        However, if this isn&lsquo;t suitable because of international
+        transaction fees or something, you should sort out a
+        <Link href="https://tfl.gov.uk/travel-information/visiting-london/visitor-oyster-card">
+          visitor oyster card
+        </Link>{" "}
+        before you leave — this will be sent to your home address and you will
+        benefit from daily price caps. Start with £15-£30 credit for a two- to
+        four-day trip, and you can top up as needed.
       </Paragraph>
       <Text tagName="h2" size="M">
-        How they met
+        🚇Train and Tube
       </Text>
-      <Paragraph className={merienda}>
-        &ldquo;We met the old fashioned way — on Tinder!&rdquo;
+      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
+        ℹ️ <strong>Remember:</strong> Tap on, tap off, always use the same card.
       </Paragraph>
       <Paragraph>
-        Lakshmi and David have been together (pretty much literally) from when
-        they first met in the Three Tuns pub in Aldgate East in London, on
-        November 3rd 2020.
+        Similarly to most metro/subway systems, most train and London
+        Underground stations have barriers where you can tap a contactless card
+        or device to gain access to or exit from a station.
       </Paragraph>
       <Paragraph>
-        With nowhere to sit inside, they took their pints outside to the beer
-        garden, with nothing but the warmth of each others&lsquo; company and an
-        array of carefully positioned halogen lamps to ward off the chill of the
-        November air.
-      </Paragraph>
-
-      <Paragraph>
-        They took an instant liking to one another. Lakshmi was impressed by
-        David&lsquo;s biceps, and David was bowled over by Lakshmi&lsquo;s
-        generous compliments.
+        Some stations have no barriers, and some or don&lsquo;t use them all of
+        the time, but you still need to tap your card or device on entry and
+        exit on the yellow card reader, in order to be charged the correct fare.
       </Paragraph>
       <Paragraph>
-        Lakshmi approached David with a proposition that he simply
-        couldn&lsquo;t refuse. She told him she had an Xbox One and a new game
-        had just come out that was co-operative multiplayer.
+        Make sure you always use the same payment method during your time in
+        London. There is a daily and weekly{" "}
+        <Link href="https://tfl.gov.uk/fares/find-fares/tube-and-rail-fares/pay-as-you-go-caps">
+          price cap
+        </Link>{" "}
+        which is automatically applied but if you use multiple payment methods,
+        you could end up spending more than you need to.
       </Paragraph>
-      <Paragraph>
-        &ldquo;Beer and video games !? I&lsquo;d better hold on to this
-        one!&rdquo;, David thought to himself.
-      </Paragraph>
-      <Paragraph>
-        Over the next two months, David and Lakshmi got to know each other as
-        Leo and Vincent, the playable protagonist characters in A Way Out. As
-        Leo and Vincent, they met each other for the first time again, escaped
-        from prison together, evaded police, and tracked down a crime boss, all
-        while navigating the twists and turns of the characters&lsquo;
-        relationship.
-      </Paragraph>
-      <Paragraph>
-        The following two years, meanwhile, have seen David and Lakshmi get to
-        know each other in real life. This has thankfully featured far less
-        violence and fewer encounters with police (apart from that one time).
-        Nevertheless, the journey has been equally if not more exhilarating, as
-        they stepped outside their comfort zones, daring to trust and support
-        one another enough to be able to start planning a future together.
-      </Paragraph>
-      <Paragraph>
-        In many ways, it has been all-or-nothing since the start. The day after
-        their first date, a national lockdown came into effect. This was the
-        second such lockdown of the Covid-19 pandemic, and though we all knew
-        the drill by this point, Lakshmi and David were faced with forming a
-        &ldquo;support bubble&rdquo; in order to be able to continue seeing each
-        other, or waiting until after lockdown. Who would have known that the
-        humble bubble which once supported Lakshmi and David&lsquo;s nascent
-        relationship was to be a progenitor of nuptials?
-      </Paragraph>
-      <Paragraph>
-        Because of the lockdown, their first months were spent in close quarters
-        at each others&lsquo; flats, playing games, cooking exotic meals
-        together, watching TV shows. It was only later as restrictions eased
-        that they began to venture out to explore the streets of East London,
-        visiting the docks to feed the ducks, and taking evening strolls by the
-        river and across Tower Bridge.
-      </Paragraph>
-      <Paragraph>
-        In the summer of 2022 they had the opportunity to meet each
-        others&lsquo; parents, with Haridas and Latha flying over from
-        Trivandrum and Chris and Martine from the Isle of Man, to spend some
-        time testing the waters as in-laws. They knew it would work out when
-        David cooked dinner for the parents one evening and brought together
-        both mothers&lsquo; signature recipes in one meal — Martine&lsquo;s
-        lentil pasta sauce taking on a new role as daal, alongside Latha&lsquo;s
-        lamb biryani.
-      </Paragraph>
-
       <Text tagName="h2" size="M">
-        Getting engaged
+        🚌 Bus
+      </Text>
+      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
+        ℹ️ <strong>Remember:</strong> Just tap once!
+      </Paragraph>
+      <Paragraph>
+        You only need to tap on when you board a bus — it&lsquo;s a fixed fare.
+        Unlike trains and the Tube, you don&lsquo;t tap off.
+      </Paragraph>
+      <Paragraph>
+        Like trains and the Tube, though, bus fares are also covered by a{" "}
+        <Link href="https://tfl.gov.uk/fares/find-fares/tube-and-rail-fares/pay-as-you-go-caps">
+          price cap
+        </Link>{" "}
+        , so make sure you use the same payment method on all transport in
+        London.
+      </Paragraph>
+      <Text tagName="h2" size="L">
+        🏨 Accommodation
       </Text>
       <Paragraph>
-        The decision to get married happened organically and gradually as
-        Lakshmi and David got to know each other, but as 2022 drew to a close
-        they started thinking of making it a reality.
+        We recommend staying in the Greenwich area, close to our reception venue
+        (Greenwich Yacht Club) — so you can make a quick and easy journey back
+        to your hotel after a whole evening of merriment at our wedding! It also
+        makes the prospect of a low-key post-nuptial brunch with the newlyweds
+        all the more likely.
       </Paragraph>
       <Paragraph>
-        2023 kicked off with choosing the date, and as February edged ever
-        closer, David started planning a proper proposal to surprise Lakshmi
-        with a ring on Valentine&lsquo;s day.
+        Below are a few hotels within walking distance (&lt;20 mins) of the
+        Greenwich Yacht Club:
+      </Paragraph>
+      <ul style={{ listStyle: "inside square" }}>
+        <li>
+          <Link href="https://goo.gl/maps/cioaH5yNQL8ZrGKT8">
+            The Pilot Greenwich
+          </Link>
+        </li>
+        <li>
+          <Link href="https://goo.gl/maps/9mLSzeXwTHxwjZN18">
+            Holiday Inn Express
+          </Link>
+        </li>
+        <li>
+          <Link href="https://goo.gl/maps/rcU8cSCfdvDbYFAW9">Radisson RED</Link>
+        </li>
+        <li>
+          <Link href="https://goo.gl/maps/ahTwpSg4zq2b9vrK8">
+            London Angerstein hotel
+          </Link>
+        </li>
+      </ul>
+      <Paragraph>
+        Slightly further afield, but very close to where Lakshmi and David live,
+        there are some other great affordable options:
+      </Paragraph>
+      <ul style={{ listStyle: "inside square" }}>
+        <li>
+          <Link href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-lewisham.html">
+            Premier Inn London Lewisham
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.travelodge.co.uk/hotels/695/London-Lewisham-hotel">
+            Travelodge London Lewisham
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-greenwich.html">
+            Premier Inn London Greenwich
+          </Link>
+        </li>
+      </ul>
+      <Paragraph>
+        If you have any trouble finding somewhere to stay, please do get in
+        touch with David and Lakshmi — they&lsquo;ll be happy to help.
+      </Paragraph>
+      <Text tagName="h2" size="L">
+        🎠 Attractions
+      </Text>
+      <Paragraph>
+        London is home to many famous landmarks and attractions, such as the
+        Tower of London, Buckingham Palace, and the London Eye. Other must-see
+        sights include the British Museum, the National Gallery, and the Tate
+        Modern. The{" "}
+        <Link href="https://londonpass.com/en-us/london-attractions">
+          London Pass
+        </Link>{" "}
+        gets you seamless access to 80+ tourist attractions at great value.
+      </Paragraph>
+      <Text tagName="h2" size="L">
+        🍴 Food and Drink
+      </Text>
+      <Paragraph>
+        London is a vibrant and diverse city with a wide variety of food and
+        drink options. From traditional British cuisine to international
+        flavors, there is something for everyone. When it comes to must-try food
+        in London, you can&lsquo;t go wrong with classics like fish and chips, a
+        traditional Sunday roast or a full English breakfast.
       </Paragraph>
       <Paragraph>
-        Secretly booking the day off work for both of them, David arrange a day
-        full of romantic activities — breakfast at sunrise in a fortieth-floor
-        restaraunt, a massage workshop with roses, prosecco, and chocolates, a
-        game of chess which <del>he let Lakshmi win</del>{" "}
-        <ins
-          style={{
-            textDecoration: "none",
-          }}
-        >
-          Lakshmi won fair and square
-        </ins>
-        , and an afternoon tea with a special diamond-based dessert!
+        Lakshmi and David have a few local favourites that they frequent and
+        recommend:
       </Paragraph>
+      <ul style={{ listStyle: "inside square" }}>
+        <li>
+          <Link href="https://gunpowderrestaurants.com/">Gunpowder</Link> for
+          Indian food with a modern twist
+        </li>
+        <li>
+          <Link href="https://duckandwaffle.com/">Duck and Waffle</Link> for
+          European food with 40th floor views
+        </li>
+        <li>
+          <Link href="https://boroughmarket.org.uk/">Borough Market</Link> — a
+          historic food market in Central London
+        </li>
+        <li>
+          <Link href="https://ye-olde-cheshire-cheese.co.uk/">
+            Ye Olde Cheshire Cheese
+          </Link>{" "}
+          a traditional pub from the 1500s
+        </li>
+        <li>
+          <Link href="https://www.thetoucansoho.co.uk/">Toucan</Link> an Irish
+          pub in Soho - it can get busy!
+        </li>
+        <li>
+          <Link href="https://gailsbread.co.uk/">Gail&lsquo;s</Link> for
+          pastries and coffee breaks
+        </li>
+      </ul>
       <Paragraph>
-        It was the perfect day and they celebrated afterwards with another
-        surprise — a trip back to where it all started at The Three Tuns, where
-        Lakshmi&lsquo;s friends and colleagues were waiting with prosecco on
-        standby to surprise her.
+        You can find pretty much any cuisine you want in London — shout if
+        you&lsquo;re craving something specific!
       </Paragraph>
+      <Text tagName="h2" size="L">
+        ⛅ Weather
+      </Text>
       <Paragraph>
-        Going straight from one whirlwind experience to another, David and
-        Lakshmi then jetted off to India in March 2023 along with David&lsquo;s
-        parents, sister, and two brothers, for an &ldquo;official&rdquo;
-        engagement ceremony with Lakshmi&lsquo;s extended family. This
-        conveniently doubled up as a massive birthday bash for Lakshmi&lsquo;s
-        mother Latha.
+        August is usually a warm and sunny month in London and average
+        temperature will be around 23 degree celsius. But as London weather is
+        notoriously unpredictable, we recommend bringing a jacket or light
+        sweater just in case. Comfortable shoes are also recommended if there is
+        a lot of walking (or dancing) involved.
       </Paragraph>
+      <Text tagName="h2" size="L">
+        🚓 Safety
+      </Text>
       <Paragraph>
-        You can check out the photos from the proposal and the engagement party
-        on the photos page.
+        London is generally a safe city, but it&lsquo;s always a good idea to
+        take precautions. We recommend keeping an eye on your belongings,
+        especially in crowded areas and around tourist attractions.
       </Paragraph>
+      <Text tagName="h2" size="L">
+        💱 Currency
+      </Text>
       <Paragraph>
-        Then, make sure you fill in the RSVP form so you can join Lakshmi and
-        David in creating more happy memories (and taking more awesome photos)
-        with them at the wedding on 26 August.
+        The currency in the UK is the British Pound (GBP). Most places accept
+        contactless and credit cards, with the rare exception.
       </Paragraph>
-
       <Paragraph>
         <span className={merienda}>
-          &ldquo;We can&lsquo;t wait to see you there!&rdquo;
+          &ldquo;We hope these tips and recommendations will help you make the
+          most of your time here and we look forward to hosting you at our
+          wedding!&rdquo;
         </span>{" "}
         — David and Lakshmi
       </Paragraph>
