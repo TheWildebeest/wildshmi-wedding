@@ -17,7 +17,7 @@ interface Props extends PropsWithChildren {
   size?: Size;
 }
 
-const defaultClasses = ["font-thin", "w-100", "my-1"];
+const defaultClasses = ["w-100", "my-1"];
 
 const XXXS = [
   // Font size

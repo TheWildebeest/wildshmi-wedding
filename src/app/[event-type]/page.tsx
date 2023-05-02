@@ -62,7 +62,7 @@ const WeddingPage: FC = () => {
                 }}
                 href={{ pathname: basePath + "/rsvp" }}
               >
-                <span className={arima}>RSVP</span>
+                <span className={`${arima} font-thin`}>RSVP</span>
               </Link>
             </div>
           </div>

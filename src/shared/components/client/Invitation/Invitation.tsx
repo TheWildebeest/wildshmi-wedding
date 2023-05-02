@@ -12,7 +12,7 @@ export const Invitation = () => {
   // const data: Data = use(res.json());
   // console.log('Fetched data: ', data.url)
   return (
-    <div className={"text-center " + arima}>
+    <div className={"text-center font-thin " + arima}>
       <Text tagName="div" size="M">
         You are warmly invited to join
       </Text>

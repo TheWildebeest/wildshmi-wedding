@@ -3,6 +3,7 @@ import { NavBar } from "@/shared/components/Navbar/NavBar";
 import { InvitationContextProvider } from "@/shared/providers/InvitationContext";
 import { EventType } from "@/shared/models";
 import { HeroImage } from "@/shared/components/client/HeroImage/HeroImage";
+import fonts from "@/shared/fonts";
 
 interface Props {
   children: ReactNode;
@@ -10,6 +11,7 @@ interface Props {
 }
 
 const LandingPage: FC<Props> = ({ children, eventType }: Props) => {
+  const { arima } = fonts;
   return (
     <>
       <InvitationContextProvider eventType={eventType}>
@@ -27,9 +29,11 @@ const LandingPage: FC<Props> = ({ children, eventType }: Props) => {
           <br />
           <hr />
           <br />
-          <div className="w-100 text-center">
+          <p
+            className={`w-100 font-light text-center text-2xs lg:text-xs xl:text-sm ${arima}`}
+          >
             © David Wildman and Lakshmi Haridas 2023
-          </div>
+          </p>
           <br />
 
           <hr />
