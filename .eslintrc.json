@@ -4,5 +4,5 @@
   "rules": {
     "no-undef": "off"
   },
-  "ignorePatterns": ["*.json"]
+  "ignorePatterns": ["*.json", "*.png", "*.jpg"]
 }
