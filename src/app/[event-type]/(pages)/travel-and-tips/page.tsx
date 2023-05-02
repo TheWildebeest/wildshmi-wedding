@@ -3,6 +3,8 @@ import { Text } from "@/shared/components/Text";
 import fonts from "@/shared/fonts";
 import Link from "next/link";
 import React, { FC } from "react";
+import towerbridge from "@/../public/assets/images/tower-bridge.png";
+import { AccessibleImage } from "@/shared/components/AccessibleImage";
 
 const TravelAndTipsPage: FC = () => {
   const { merienda } = fonts;
@@ -283,6 +285,11 @@ const TravelAndTipsPage: FC = () => {
         The currency in the UK is the British Pound (GBP). Most places accept
         contactless and credit cards, with the rare exception.
       </Paragraph>
+      <AccessibleImage
+        image={towerbridge}
+        altText="David and Lakshmi by Tower Bridge"
+        captionText="An iconic sight, plus there is a bridge"
+      />
       <Paragraph>
         <span className={merienda}>
           &ldquo;We hope these tips and recommendations will help you make the
