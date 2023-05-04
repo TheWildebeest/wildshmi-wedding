@@ -32,7 +32,7 @@ const LandingPage: FC<Props> = ({ children, eventType }: Props) => {
           <p
             className={`w-100 font-light text-center text-2xs lg:text-xs xl:text-sm ${arima}`}
           >
-            © David Wildman and Lakshmi Haridas 2023
+            ♥ The Wildshmi Wedding ♥
           </p>
           <br />
 
