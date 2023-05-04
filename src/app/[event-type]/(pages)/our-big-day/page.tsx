@@ -3,6 +3,7 @@ import { Paragraph } from "@/shared/components/Paragraph";
 import { Timeline } from "@/shared/components/Timeline";
 import React, { FC } from "react";
 
+import church from "public/assets/images/timeline/church.png";
 import bed from "public/assets/images/timeline/bed.png";
 import camera from "public/assets/images/timeline/camera.png";
 import rings from "public/assets/images/timeline/rings.png";
@@ -12,7 +13,6 @@ import bus from "public/assets/images/timeline/bus.png";
 import speech from "public/assets/images/timeline/speech.png";
 import couple from "public/assets/images/timeline/couple.png";
 import champagne from "public/assets/images/timeline/champagne.png";
-import placeholder from "public/assets/images/timeline/placeholder.webp";
 import { InvitationContext } from "@/shared/providers/InvitationContext";
 import { useContext } from "react";
 
@@ -20,7 +20,7 @@ const AM = [
   {
     time: "10:30",
     title: "Guests arrive",
-    image: placeholder,
+    image: church,
   },
   {
     time: "11:00",
