@@ -3,16 +3,16 @@ import { Paragraph } from "@/shared/components/Paragraph";
 import { Timeline } from "@/shared/components/Timeline";
 import React, { FC } from "react";
 
-import church from "public/assets/images/timeline/church.png";
-import bed from "public/assets/images/timeline/bed.png";
-import camera from "public/assets/images/timeline/camera.png";
-import rings from "public/assets/images/timeline/rings.png";
-import plate from "public/assets/images/timeline/plate.png";
-import karaoke from "public/assets/images/timeline/karaoke.png";
-import bus from "public/assets/images/timeline/bus.png";
-import speech from "public/assets/images/timeline/speech.png";
-import couple from "public/assets/images/timeline/couple.png";
-import champagne from "public/assets/images/timeline/champagne.png";
+import church from "public/assets/images/icons/church.png";
+import bed from "public/assets/images/icons/bed.png";
+import camera from "public/assets/images/icons/camera.png";
+import rings from "public/assets/images/icons/rings.png";
+import plate from "public/assets/images/icons/plate.png";
+import karaoke from "public/assets/images/icons/karaoke.png";
+import bus from "public/assets/images/icons/bus.png";
+import speech from "public/assets/images/icons/speech.png";
+import couple from "public/assets/images/icons/couple.png";
+import champagne from "public/assets/images/icons/champagne.png";
 import { InvitationContext } from "@/shared/providers/InvitationContext";
 import { useContext } from "react";
 
