@@ -25,17 +25,13 @@ const ContactPage: FC = () => {
         <Paragraph>
           Do please get in touch if you have any questions or comments!
         </Paragraph>
-        <Paragraph>
-          WhatsApp is the best way to get hold of David and Lakshmi.
-        </Paragraph>
-        <Paragraph>
-          There is also a dedicated wedding email address for contacting the
-          couple.
-        </Paragraph>
         <article>
           <Text tagName="h3" size="M">
-            👨🏼👩🏾 Email the couple
+            💻 Email
           </Text>
+          <Paragraph>
+            Clicking the email address below will copy it to your clipboard.
+          </Paragraph>
           <Text tagName="div" size="XS">
             <p className={paragraphSpacing.join(" ")}>
               <button
@@ -63,23 +59,23 @@ const ContactPage: FC = () => {
         </article>
         <article>
           <Text tagName="p" size="M">
-            👨🏼 Message David
+            📱 WhatsApp
           </Text>
+          <Paragraph>
+            Clicking one of the buttons below will open WhatsApp
+          </Paragraph>
           <p className={paragraphSpacing.join(" ")}>
             <WhatsAppLink
               name="David"
               phoneNumber="+44 (0)7890 346 023"
+              color="black"
             ></WhatsAppLink>
           </p>
-        </article>
-        <article>
-          <Text tagName="p" size="M">
-            👩🏾 Message Lakshmi
-          </Text>
           <p className={paragraphSpacing.join(" ")}>
             <WhatsAppLink
               name="Lakshmi"
               phoneNumber="+44 (0)7308 574 871"
+              color="black"
             ></WhatsAppLink>
           </p>
         </article>

@@ -11,7 +11,7 @@ const Icon = ({ src, altText }: IconProps) => {
       style={{
         display: "inline-block",
         width: "1em",
-        margin: "0 0.4em 0em 0.6em",
+        margin: "0 0.4em 0.2em 0.6em",
         verticalAlign: "middle",
       }}
       src={src}

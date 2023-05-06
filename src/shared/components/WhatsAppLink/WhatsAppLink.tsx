@@ -1,31 +1,52 @@
 import { Text } from "../Text";
-import whatsappicon from "public/assets/images/icons/whatsapp.svg";
+import whatsappiconwhite from "public/assets/images/icons/whatsapp-white.svg";
+import whatsappiconblack from "public/assets/images/icons/whatsapp-black.svg";
 import { Icon } from "../Icon";
 
 export interface WhatsAppLinkProps {
   name: string;
   phoneNumber: string;
+  color?: "white" | "black";
 }
 
-export const WhatsAppLink = ({ phoneNumber, name }: WhatsAppLinkProps) => {
+const iconThemeMap = {
+  white: whatsappiconwhite,
+  black: whatsappiconblack,
+} as const;
+
+export const WhatsAppLink = ({
+  phoneNumber,
+  name,
+  color,
+}: WhatsAppLinkProps) => {
   const formattedPhoneNumber = phoneNumber
     .split("")
     .join("")
     .replace(/\D/g, "");
   const messageMeText = `Message ${name} on WhatsApp`;
   const uriEncodedText = encodeURIComponent(
-    `Hello, it's ${name} here! Feel free to get in touch about the wedding.`
+    `Hi ${name}! I'm getting in touch about the wedding.`
   );
   const href = `https://wa.me/${formattedPhoneNumber}?text=${uriEncodedText}`;
   return (
     <Text tagName="span" size="XS">
       <a
-        style={{ color: "black", textDecoration: "none" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: "inline-block",
+          color: color,
+          textDecoration: "none",
+          paddingRight: "0.4em",
+        }}
         aria-label={messageMeText}
         href={href}
       >
-        <Icon src={whatsappicon} altText={messageMeText}></Icon>
-        {phoneNumber}
+        <Icon
+          src={iconThemeMap[color || "black"]}
+          altText={messageMeText}
+        ></Icon>
+        {`Chat with ${name}`}
       </a>
     </Text>
   );
