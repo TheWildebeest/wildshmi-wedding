@@ -51,6 +51,22 @@ main a {
   text-decoration: underline;
 }
 
+.fade {
+  animation-duration: 200ms;
+  animation-name: animate-fade;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hearts {
   width: 5%;
   min-width: 100px;

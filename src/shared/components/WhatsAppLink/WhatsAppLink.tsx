@@ -18,15 +18,14 @@ export const WhatsAppLink = ({ phoneNumber, name }: WhatsAppLinkProps) => {
   );
   const href = `https://wa.me/${formattedPhoneNumber}?text=${uriEncodedText}`;
   return (
-    <Text tagName="span" size="S">
-      WhatsApp:
+    <Text tagName="span" size="XS">
       <a
         style={{ color: "black", textDecoration: "none" }}
         aria-label={messageMeText}
         href={href}
       >
         <Icon src={whatsappicon} altText={messageMeText}></Icon>
-        <strong>{phoneNumber}</strong>
+        {phoneNumber}
       </a>
     </Text>
   );
