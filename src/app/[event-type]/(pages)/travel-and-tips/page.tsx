@@ -5,6 +5,8 @@ import Link from "next/link";
 import React, { FC } from "react";
 import towerbridge from "@/../public/assets/images/tower-bridge.png";
 import { AccessibleImage } from "@/shared/components/AccessibleImage";
+import { List } from "@/shared/components/List";
+import { InfoBox } from "@/shared/components/InfoBox";
 
 const TravelAndTipsPage: FC = () => {
   const { merienda } = fonts;
@@ -26,11 +28,10 @@ const TravelAndTipsPage: FC = () => {
         also regular train services which are generally cheaper and more
         convenient, as well as taxi and bus services.
       </Paragraph>
-      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
-        ℹ️ <strong>Good to know:</strong> For the Gatwick Express and Heathrow
-        Express you need to purchase a ticket before boarding the train,
-        otherwise you will receive a fine.
-      </Paragraph>
+      <InfoBox title="Good to know:" type="info">
+        For the Gatwick Express and Heathrow Express you need to purchase a
+        ticket before boarding the train, otherwise you will receive a fine.
+      </InfoBox>
       <Text tagName="h3" size="M">
         ✈️ Gatwick
       </Text>
@@ -79,10 +80,10 @@ const TravelAndTipsPage: FC = () => {
       <Text tagName="h2" size="L">
         🏙️ Getting around London
       </Text>
-      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
-        ℹ️ <strong>Good to know:</strong> Using Google Maps or CityMapper will
-        make it much easier getting around by bus and tube.
-      </Paragraph>
+      <InfoBox title="Good to know:" type="info">
+        Using Google Maps or CityMapper will make it much easier getting around
+        by bus and tube.
+      </InfoBox>
       <Paragraph>
         It is not necessary to purchase an Oyster Card or other form of travel
         card when visiting London these days. It&lsquo;s far more convenient and
@@ -102,9 +103,9 @@ const TravelAndTipsPage: FC = () => {
       <Text tagName="h2" size="M">
         🚇Train and Tube
       </Text>
-      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
-        ℹ️ <strong>Remember:</strong> Tap on, tap off, always use the same card.
-      </Paragraph>
+      <InfoBox title="Remember:" type="info">
+        Tap on, tap off, always use the same card.
+      </InfoBox>
       <Paragraph>
         Similarly to most metro/subway systems, most train and London
         Underground stations have barriers where you can tap a contactless card
@@ -127,9 +128,9 @@ const TravelAndTipsPage: FC = () => {
       <Text tagName="h2" size="M">
         🚌 Bus
       </Text>
-      <Paragraph className="text-xs lg:text-sm xl:text-lg border-slate-700 border-dotted border-2 p-2 bg-sky-100">
-        ℹ️ <strong>Remember:</strong> Just tap once!
-      </Paragraph>
+      <InfoBox title="Remember:" type="info">
+        Just tap once!
+      </InfoBox>
       <Paragraph>
         You only need to tap on when you board a bus — it&lsquo;s a fixed fare.
         Unlike trains and the Tube, you don&lsquo;t tap off.
@@ -156,7 +157,7 @@ const TravelAndTipsPage: FC = () => {
         Below are a few hotels within walking distance (&lt;20 mins) of the
         Greenwich Yacht Club:
       </Paragraph>
-      <ul style={{ listStyle: "inside square" }}>
+      <List>
         <li>
           <Link href="https://goo.gl/maps/cioaH5yNQL8ZrGKT8">
             The Pilot Greenwich
@@ -175,12 +176,12 @@ const TravelAndTipsPage: FC = () => {
             London Angerstein hotel
           </Link>
         </li>
-      </ul>
+      </List>
       <Paragraph>
         Slightly further afield, but very close to where Lakshmi and David live,
         there are some other great affordable options:
       </Paragraph>
-      <ul style={{ listStyle: "inside square" }}>
+      <List>
         <li>
           <Link href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-lewisham.html">
             Premier Inn London Lewisham
@@ -196,7 +197,7 @@ const TravelAndTipsPage: FC = () => {
             Premier Inn London Greenwich
           </Link>
         </li>
-      </ul>
+      </List>
       <Paragraph>
         If you have any trouble finding somewhere to stay, please do get in
         touch with David and Lakshmi — they&lsquo;ll be happy to help.
@@ -228,7 +229,7 @@ const TravelAndTipsPage: FC = () => {
         Lakshmi and David have a few local favourites that they frequent and
         recommend:
       </Paragraph>
-      <ul style={{ listStyle: "inside square" }}>
+      <List>
         <li>
           <Link href="https://gunpowderrestaurants.com/">Gunpowder</Link> for
           Indian food with a modern twist
@@ -255,7 +256,7 @@ const TravelAndTipsPage: FC = () => {
           <Link href="https://gailsbread.co.uk/">Gail&lsquo;s</Link> for
           pastries and coffee breaks
         </li>
-      </ul>
+      </List>
       <Paragraph>
         You can find pretty much any cuisine you want in London — shout if
         you&lsquo;re craving something specific!
