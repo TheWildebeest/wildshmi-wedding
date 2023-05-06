@@ -1,99 +1,51 @@
+import families from "/public/assets/images/families.jpg";
+import fonts from "@/shared/fonts";
 import Image from "next/image";
 
-import babyLakshmi from "/public/assets/images/baby-lakshmi.webp";
-import babyDavid from "/public/assets/images/baby-david.webp";
-
-import fonts from "@/shared/fonts";
+import styles from "./styles.module.css";
+import { Text } from "@/shared/components/Text";
+import { paragraphSpacing } from "@/shared/helpers";
 
 export default function Root() {
+  const { imageWrapper, filter, text } = styles;
+  const { arima } = fonts;
   return (
     <>
-      <div className="hearts top-left">
-        <div className="heart"></div>
-        <div className="heart"></div>
-        <div className="heart"></div>
-        <div className="heart"></div>
-      </div>
-      <div className="flex flex-col lg:flex-row justify-between align-between lg:align-between h-screen">
-        <div className="w-full lg:w-1/4 lg:h-full grid place-items-center">
+      <div className={imageWrapper}>
+        <div className={text}>
           <div
-            className="flex lg:hidden"
-            style={{ maxWidth: "100%", maxHeight: "35vh", overflow: "hidden" }}
+            className={`${arima} text-white text-xl ${paragraphSpacing.join(
+              " "
+            )}`}
           >
-            <Image
-              style={{
-                color: "white",
-                objectPosition: "0 12%",
-                objectFit: "cover",
-              }}
-              src={babyLakshmi}
-              alt="Lakshmi as a child"
-            />
+            <Text tagName="p" size="XL">
+              The Wildshmi Wedding
+            </Text>
           </div>
           <div
-            className="hidden lg:flex"
-            style={{ maxWidth: "25vw", maxHeight: "80vh", overflow: "hidden" }}
+            className={`${arima} text-white text-xl ${paragraphSpacing.join(
+              " "
+            )}`}
           >
-            <Image
-              style={{
-                color: "white",
-                objectPosition: "center",
-                objectFit: "contain",
-              }}
-              src={babyLakshmi}
-              alt="Lakshmi as a child"
-            />
+            <Text tagName="p" size="XL">
+              Looking for your wedding invite?
+            </Text>
+          </div>
+          <div
+            className={`${arima} text-white text-xl ${paragraphSpacing.join(
+              " "
+            )}`}
+          >
+            <Text tagName="p" size="L">
+              Check the link you were sent, and visit that exact page.
+            </Text>
           </div>
         </div>
-        <div className="w-auto h-screen grid place-items-center text-center">
-          <header className={fonts.annissaScript}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-              <span className="text-indigo-800"> David Wildman{"\n"}</span>
-              <br />
-              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-indigo-800">
-                &{"\n"}
-              </span>
-              <br />
-              <span className="text-indigo-800">Lakshmi Haridas</span>
-            </h1>
-          </header>
-        </div>
-        <div className="w-full lg:w-1/4 lg:h-full grid place-items-center">
-          <div
-            className="flex lg:hidden"
-            style={{ maxWidth: "100%", maxHeight: "35vh", overflow: "hidden" }}
-          >
-            <Image
-              style={{
-                color: "white",
-                objectPosition: "0 30%",
-                objectFit: "cover",
-              }}
-              src={babyDavid}
-              alt="Lakshmi as a child"
-            />
-          </div>
-          <div
-            className="hidden lg:flex"
-            style={{ maxWidth: "25vw", maxHeight: "80vh", overflow: "hidden" }}
-          >
-            <Image
-              style={{
-                color: "white",
-                objectPosition: "center",
-                objectFit: "contain",
-              }}
-              src={babyDavid}
-              alt="Lakshmi as a child"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="hearts bottom-right">
-        <div className="heart"></div>
-        <div className="heart"></div>
-        <div className="heart"></div>
-        <div className="heart"></div>
+        <div className={filter}></div>
+        <Image
+          alt="David and Lakshmi with their families"
+          src={families}
+        ></Image>
       </div>
     </>
   );

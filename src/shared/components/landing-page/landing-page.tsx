@@ -3,6 +3,7 @@ import { NavBar } from "@/shared/components/Navbar/NavBar";
 import { InvitationContextProvider } from "@/shared/providers/InvitationContext";
 import { EventType } from "@/shared/models";
 import { HeroImage } from "@/shared/components/client/HeroImage/HeroImage";
+import hero from "/public/assets/images/david-and-lakshmi-1.jpg";
 import fonts from "@/shared/fonts";
 
 interface Props {
@@ -16,7 +17,7 @@ const LandingPage: FC<Props> = ({ children, eventType }: Props) => {
     <>
       <InvitationContextProvider eventType={eventType}>
         <NavBar eventType={eventType}></NavBar>
-        <HeroImage></HeroImage>
+        <HeroImage src={hero}></HeroImage>
         <main
           className="
           w-100
