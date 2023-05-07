@@ -13,6 +13,7 @@ export const Invitation = () => {
   // const res: Response = use(fetch("http://localhost:3000/api/invitation"));
   // const data: Data = use(res.json());
   // console.log('Fetched data: ', data.url)
+  const alignText = eventName === "Wedding" ? "left" : "center";
   return (
     <div className={"text-center font-normal " + arima}>
       <Text tagName="div" size="XXXL">
@@ -62,7 +63,7 @@ export const Invitation = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
           </Text>
         )}
-        <div className="w-1/3 text-left">
+        <div className={`w-1/3 text-${alignText}`}>
           <Text tagName="div" size="XS">
             Greenwich Yacht Club
           </Text>
