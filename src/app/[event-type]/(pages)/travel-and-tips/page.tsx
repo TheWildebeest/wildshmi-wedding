@@ -1,3 +1,4 @@
+"use client";
 import { Paragraph } from "@/shared/components/Paragraph";
 import { Text } from "@/shared/components/Text";
 import fonts from "@/shared/fonts";
@@ -7,8 +8,10 @@ import towerbridge from "@/../public/assets/images/tower-bridge.png";
 import { AccessibleImage } from "@/shared/components/AccessibleImage";
 import { List } from "@/shared/components/List";
 import { InfoBox } from "@/shared/components/InfoBox";
+import { usePathname } from "next/navigation";
 
 const TravelAndTipsPage: FC = () => {
+  const basePath = usePathname()?.replace("/travel-and-tips", "");
   const { merienda } = fonts;
 
   return (
@@ -200,8 +203,9 @@ const TravelAndTipsPage: FC = () => {
         </li>
       </List>
       <Paragraph>
-        If you have any trouble finding somewhere to stay, please do get in
-        touch with David and Lakshmi — they&lsquo;ll be happy to help.
+        If you have any trouble finding somewhere to stay, please do{" "}
+        <Link href={{ pathname: basePath + "/contact" }}>get in touch</Link>{" "}
+        with David and Lakshmi — they&lsquo;ll be happy to help.
       </Paragraph>
       <Text tagName="h2" size="L">
         🎠 Attractions

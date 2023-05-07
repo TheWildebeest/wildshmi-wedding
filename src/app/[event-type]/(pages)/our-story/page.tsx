@@ -100,18 +100,17 @@ const OurStoryPage: FC = () => {
         Lakshmi had been something of a rebel during her school days. When the
         time came to apply to universities, a family friend suggested she apply
         to a relatively mediocre university (NTU) in Singapore. Instead, she
-        ended up accidentally applying to one of the top ten Engineering courses
-        in the world, and winning a full scholarship that propelled her to
-        success. As an Alumnus of the National University of Singapore, Lakshmi
-        lays claim to a status whose pedagogical pedigree is as impressive as
-        its acronym is unfortunate.
+        ended up accidentally applying to and winning a full scholarship for one
+        of the top Engineering courses in the world. As an Alumnus of the
+        National University of Singapore, Lakshmi lays claim to a status whose
+        pedagogical pedigree is as impressive as its acronym is unfortunate.
       </Paragraph>
       <Paragraph>
         What does a bona-fide goddess of wealth look for in a man, than?
         Fortunately for David, she cares more about personality than paycheck,
         and even then, the personality requirements aren&lsquo;t particularly
         stringent. From as early as she can remember, Lakshmi has always known
-        what see wanted in a man. At school when her friends would ask her what
+        what she wanted in a man. At school when her friends would ask her what
         type of guy she wanted to marry, her answer was always the same:
         &ldquo;A funny guy&rdquo;.
       </Paragraph>
