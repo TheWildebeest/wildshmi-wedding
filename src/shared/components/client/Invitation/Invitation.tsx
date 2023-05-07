@@ -15,10 +15,10 @@ export const Invitation = () => {
   // console.log('Fetched data: ', data.url)
   return (
     <div className={"text-center font-normal " + arima}>
-      <Text tagName="div" size="XXXXL">
+      <Text tagName="div" size="XXXL">
         <div className="flex justify-center items-center">
-          <div className="w-1/2 text-right">David</div>
-          <div className="text-center h-100 w-1/4">
+          <div className="w-1/4 text-right">David</div>
+          <div className="text-center h-100 w-[20%]">
             <Image
               alt="Interlocking rings"
               style={{
@@ -35,7 +35,7 @@ export const Invitation = () => {
               src={rings}
             ></Image>
           </div>
-          <div className="w-1/2 text-left">Lakshmi</div>
+          <div className="w-1/4 text-left">Lakshmi</div>
         </div>
       </Text>
       <Text tagName="div" size="M">
@@ -51,8 +51,8 @@ export const Invitation = () => {
       </Text>
       <div className="flex justify-center mt-[1rem]">
         {eventName === "Wedding" && (
-          <div className="w-2/4 text-right">
-            <Text tagName="div" size="S">
+          <div className="w-1/3 text-right">
+            <Text tagName="div" size="XS">
               Fitzrovia Chapel
             </Text>
           </div>
@@ -62,8 +62,8 @@ export const Invitation = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
           </Text>
         )}
-        <div className="w-2/4 text-left">
-          <Text tagName="div" size="S">
+        <div className="w-1/3 text-left">
+          <Text tagName="div" size="XS">
             Greenwich Yacht Club
           </Text>
         </div>
