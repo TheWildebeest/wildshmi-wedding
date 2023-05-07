@@ -30,7 +30,7 @@ const OurStoryPage: FC = () => {
   return (
     <div className="max-w-[50em] mx-auto">
       <Text tagName="h2" size="L">
-        👶🏼 Beginnings 👶🏾
+        Beginnings
       </Text>
       <Paragraph>
         All of the greatest heroes have a really cool origin story.
@@ -49,7 +49,7 @@ const OurStoryPage: FC = () => {
         a couple of interesting facts about them that you don&lsquo;t know.
       </Paragraph>
       <Text tagName="h3" size="M">
-        📙 Lakshmi&lsquo;s origin story
+        Lakshmi&lsquo;s origin story
       </Text>
       <Paragraph>
         Lakshmi is named after the Hindu goddess of wealth. Below, you can see a
@@ -121,7 +121,7 @@ const OurStoryPage: FC = () => {
         captionText="Lakshmi and a funny guy"
       />
       <Text tagName="h3" size="M">
-        📘 David&lsquo;s origin story
+        David&lsquo;s origin story
       </Text>
       <Paragraph>
         Though not a golden goddess, David&lsquo;s name also comes with a hefty
