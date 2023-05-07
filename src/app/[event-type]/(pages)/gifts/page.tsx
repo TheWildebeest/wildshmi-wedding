@@ -54,7 +54,7 @@ const GiftsPage: FC = () => {
           not mean you are expected to provide a gift.
         </InfoBox>
         <Paragraph>
-          As our wedding guest, all we expect of you is your <del>presents</del>
+          As our wedding guest, all we expect of you is your <del>presents</del>{" "}
           <ins>presence</ins>, nothing more. Our wedding is a once-in-a-lifetime
           experience for us, and it would mean the world to have your there.
         </Paragraph>
