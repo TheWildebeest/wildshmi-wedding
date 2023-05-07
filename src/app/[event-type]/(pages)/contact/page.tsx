@@ -2,7 +2,11 @@
 import { Icon } from "@/shared/components/Icon";
 import { Paragraph } from "@/shared/components/Paragraph";
 import { Text } from "@/shared/components/Text";
-import { WhatsAppLink } from "@/shared/components/WhatsAppLink";
+
+import {
+  ChatWithDavid,
+  ChatWithLakshmi,
+} from "@/shared/components/WhatsAppLink/WhatsAppLink";
 import { paragraphSpacing } from "@/shared/helpers";
 import email from "public/assets/images/icons/email.png";
 
@@ -14,20 +18,20 @@ const ContactPage: FC = () => {
   const copyEmailAddressToClipboard = () => {
     navigator.clipboard.writeText("wildshmi@gmail.com");
     setShowConfirmation(true);
-    setTimeout(() => setShowConfirmation(false), 4000);
+    setTimeout(() => setShowConfirmation(false), 2000);
   };
   return (
     <>
       <div>
         <Text tagName="h2" size="L">
-          📡 Get in touch
+          📱 Get in touch
         </Text>
         <Paragraph>
           Do please get in touch if you have any questions or comments!
         </Paragraph>
         <article>
           <Text tagName="h3" size="M">
-            💻 Email
+            Email
           </Text>
           <Paragraph>
             Clicking the email address below will copy it to your clipboard.
@@ -59,25 +63,13 @@ const ContactPage: FC = () => {
         </article>
         <article>
           <Text tagName="p" size="M">
-            📱 WhatsApp
+            WhatsApp
           </Text>
           <Paragraph>
             Clicking one of the buttons below will open WhatsApp
           </Paragraph>
-          <p className={paragraphSpacing.join(" ")}>
-            <WhatsAppLink
-              name="David"
-              phoneNumber="+44 (0)7890 346 023"
-              color="black"
-            ></WhatsAppLink>
-          </p>
-          <p className={paragraphSpacing.join(" ")}>
-            <WhatsAppLink
-              name="Lakshmi"
-              phoneNumber="+44 (0)7308 574 871"
-              color="black"
-            ></WhatsAppLink>
-          </p>
+          <ChatWithDavid color="black" />
+          <ChatWithLakshmi color="black" />
         </article>
       </div>
     </>

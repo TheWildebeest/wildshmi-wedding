@@ -17,13 +17,13 @@ const GiftsPage: FC = () => {
           <span id="registry">🎁 Gift registry</span>
         </Text>
         <Paragraph>
-          We have registered with{" "}
+          If you would like to give us a gift, please use our wedding registry,
+          available at:{" "}
           <strong>
             <Link target="_blank" href="https://www.hitchd.com/wildshmi">
               hitchd.com/wildshmi
             </Link>{" "}
           </strong>
-          as an alternative to registering with a store.
         </Paragraph>
         <Paragraph>
           We have built a domestic life together and already have all the
@@ -60,9 +60,16 @@ const GiftsPage: FC = () => {
         </Paragraph>
         <Paragraph>
           So, come and join us, dance with us, sing with us, take selfies and
-          post them with #wildshmi on instagram. Indulge us in experiences that
-          become memories, that become stories we hope to recount long into the
-          future.
+          post them with{" "}
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/explore/tags/wildshmi"
+          >
+            <strong>#wildshmi</strong>
+          </Link>{" "}
+          on instagram. Indulge us in experiences that become memories, that
+          become stories we hope to recount long into the future.
         </Paragraph>
 
         <Text></Text>

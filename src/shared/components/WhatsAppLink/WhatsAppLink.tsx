@@ -14,6 +14,11 @@ const iconThemeMap = {
   black: whatsappiconblack,
 } as const;
 
+const bgColorMap = {
+  white: "rgba(0, 0, 0, 0.25)",
+  black: "white",
+};
+
 export const WhatsAppLink = ({
   phoneNumber,
   name,
@@ -51,3 +56,47 @@ export const WhatsAppLink = ({
     </Text>
   );
 };
+
+export interface ChatWithMeProps {
+  color: "black" | "white";
+  name: string;
+  phoneNumber: string;
+}
+
+const ChatWithMe = ({ color, name, phoneNumber }: ChatWithMeProps) => (
+  <div
+    style={{
+      display: "inline-block",
+      border: `2px solid ${color}`,
+      borderRadius: "0.3em",
+      backgroundColor: bgColorMap[color],
+      margin: "0.2em",
+    }}
+  >
+    <WhatsAppLink
+      name={name}
+      color={color}
+      phoneNumber={phoneNumber}
+    ></WhatsAppLink>
+  </div>
+);
+
+export interface ColorProps {
+  color: "black" | "white";
+}
+
+export const ChatWithDavid = ({ color }: ColorProps) => (
+  <ChatWithMe
+    color={color}
+    name="David"
+    phoneNumber="+44 (0)7890 346 023"
+  ></ChatWithMe>
+);
+
+export const ChatWithLakshmi = ({ color }: ColorProps) => (
+  <ChatWithMe
+    name="Lakshmi"
+    color={color}
+    phoneNumber="+44 (0) 7308 574 871"
+  ></ChatWithMe>
+);
