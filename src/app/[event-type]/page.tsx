@@ -16,6 +16,42 @@ const WeddingPage: FC = () => {
       <Invitation></Invitation>
       <div className="text-center w-100" style={{ marginTop: "1rem" }}>
         <Text tagName="div" size="XL">
+          <div>
+            <div
+              style={{
+                display: "flex",
+                placeItems: "center",
+                height: "2em",
+                top: "30%",
+                left: "0",
+                right: "0",
+                bottom: "0",
+                color: "white",
+              }}
+            >
+              <Link
+                style={{
+                  padding: "2% 0",
+                  margin: "0 auto",
+                  width: "30%",
+                  height: "max-content",
+                  background: "var(--wildshmi-secondary)",
+                  boxShadow: "var(--wildshmi-grey) 0 10px 20px -10px",
+
+                  borderRadius: "0.5em",
+                  color: "white",
+                  textDecoration: "unset",
+                }}
+                href={{ pathname: basePath + "/rsvp" }}
+              >
+                <span className={`${arima} font-semibold`}>RSVP</span>
+              </Link>
+            </div>
+          </div>
+        </Text>
+      </div>
+      <div className="text-center w-100" style={{ marginTop: "1rem" }}>
+        <Text tagName="div" size="XL">
           <div
             style={{
               margin: "0 auto",
@@ -33,38 +69,9 @@ const WeddingPage: FC = () => {
                 // objectPosition: 'center center',
                 objectFit: "cover",
                 width: "10em",
-                filter: "drop-shadow(0px 0px 3px grey)",
+                // filter: "drop-shadow(0px 0px 3px grey)",
               }}
             />
-            <div
-              style={{
-                display: "flex",
-                placeItems: "center",
-                position: "absolute",
-                height: "2em",
-                top: "30%",
-                left: "0",
-                right: "0",
-                bottom: "0",
-                color: "white",
-              }}
-            >
-              <Link
-                style={{
-                  padding: "2% 0",
-                  margin: "0 auto",
-                  width: "30%",
-                  height: "max-content",
-                  background: "rgba(0, 0, 0, 0.5)",
-                  border: "3px solid white",
-                  color: "white",
-                  textDecoration: "unset",
-                }}
-                href={{ pathname: basePath + "/rsvp" }}
-              >
-                <span className={`${arima} font-thin`}>RSVP</span>
-              </Link>
-            </div>
           </div>
         </Text>
       </div>

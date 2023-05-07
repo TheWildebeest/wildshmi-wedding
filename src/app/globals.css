@@ -8,27 +8,29 @@
   /**
    * Red
    */
-  --wildshmi-primary: #a20307;
+  --wildshmi-primary-rgb: 162, 3, 7;
+  --wildshmi-primary: rgb(162, 3, 7);
   /**
    * Pink
    */
-  --wildshmi-secondary: #edb3b6;
+  --wildshmi-secondary-rgb: 237, 179, 182;
+  --wildshmi-secondary: rgb(237, 179, 182);
   /**
    * Blue
    */
-  --wildshmi-link: #14248a;
+  --wildshmi-link: rgb(20, 36, 138);
   /**
    * Black
    */
-  --wildshmi-black: #2a2b2a;
+  --wildshmi-black: rgb(42, 43, 42);
   /**
    * Grey
    */
-  --wildshmi-grey: #696a69;
+  --wildshmi-grey: rgb(105, 106, 105);
 }
 
 body {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
 }
 
 hr {
