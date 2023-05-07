@@ -1,27 +1,29 @@
 "use client";
 import { Paragraph } from "@/shared/components/Paragraph";
-import React, { FC, MutableRefObject, useRef } from "react";
+import { RsvpButton } from "@/shared/components/RSVPButton";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React, { FC } from "react";
 
 const RSVPPage: FC = () => {
-  const iframeRef: MutableRefObject<HTMLIFrameElement | null> = useRef(null);
-  const height =
-    iframeRef?.current?.contentWindow?.document.body.scrollHeight || 1200;
+  const basePath = usePathname()?.replace("/rsvp", "");
   return (
     <div className="max-w-[50em] mx-auto">
-      {/* <Text tagName='h2' size='L'>Beginnings</Text> */}
-      <Paragraph>Please fill out the form below to RSVP.</Paragraph>
-      <iframe
-        ref={iframeRef}
-        style={{ width: "100%", minHeight: `${height}px` }}
-        src="https://docs.google.com/forms/d/e/1FAIpQLScYeqFc_JlvkT769oNk5EfEuUKc0UAm3JsoWdd7QUfYUTPYyw/viewform?embedded=true"
-        width={640}
-        height={height}
-        frameBorder={0}
-        marginHeight={0}
-        marginWidth={0}
-      >
-        Loading…
-      </iframe>
+      <Paragraph>
+        Please click below to be taken to the RSVP form. Please respond before{" "}
+        <strong>Saturday 20th May</strong>.
+      </Paragraph>
+      <Paragraph>
+        You only need to complete the form once, and you can reply on behalf of
+        all guests on your invitation in one go.
+      </Paragraph>
+      <Paragraph>
+        If you have any issues with the form, please{" "}
+        <Link href={basePath + "/contact"}>get in touch</Link> with Lakshmi and
+        David.
+      </Paragraph>
+
+      <RsvpButton></RsvpButton>
     </div>
   );
 };
