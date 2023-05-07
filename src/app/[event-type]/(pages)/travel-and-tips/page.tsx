@@ -94,6 +94,7 @@ const TravelAndTipsPage: FC = () => {
         However, if this isn&lsquo;t suitable because of international
         transaction fees or something, you should sort out a
         <Link href="https://tfl.gov.uk/travel-information/visiting-london/visitor-oyster-card">
+          {" "}
           visitor oyster card
         </Link>{" "}
         before you leave — this will be sent to your home address and you will
