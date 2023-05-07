@@ -40,12 +40,16 @@ export const Invitation = () => {
       </Text>
       <Text tagName="div" size="M">
         <span
-          style={{ fontWeight: "bold", color: "var(--wildshmi-secondary)" }}
+          style={{
+            fontWeight: "bold",
+            color: "var(--wildshmi-secondary)",
+            marginTop: "1rem",
+          }}
         >
           26.08.2023
         </span>
       </Text>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-[1rem]">
         {eventName === "Wedding" && (
           <div className="w-2/4 text-right">
             <Text tagName="div" size="S">
