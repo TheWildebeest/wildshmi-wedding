@@ -279,13 +279,6 @@ const TravelAndTipsPage: FC = () => {
         take precautions. We recommend keeping an eye on your belongings,
         especially in crowded areas and around tourist attractions.
       </Paragraph>
-      <Text tagName="h2" size="L">
-        💱 Currency
-      </Text>
-      <Paragraph>
-        The currency in the UK is the British Pound (GBP). Most places accept
-        contactless and credit cards, with the rare exception.
-      </Paragraph>
       <AccessibleImage
         image={towerbridge}
         altText="David and Lakshmi by Tower Bridge"
