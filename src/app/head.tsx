@@ -4,7 +4,7 @@ export default function Head() {
   return (
     <>
       <DocumentHead />
-      <title>David ❤️ Lakshmi</title>
+      <title>David & Lakshmi — 26.08.23</title>
     </>
   );
 }
