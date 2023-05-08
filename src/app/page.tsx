@@ -39,7 +39,7 @@ export default function Root() {
       <WhatsAppLink
         name="Lakshmi"
         color="white"
-        phoneNumber="+44 (0) 7890 346 023"
+        phoneNumber="+44 (0) 7308 574 871"
       ></WhatsAppLink>
     </ChatWithMe>
   );
