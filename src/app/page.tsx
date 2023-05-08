@@ -10,7 +10,7 @@ import { PropsWithChildren } from "react";
 
 export default function Root() {
   const { imageWrapper, filter, text } = styles;
-  const { arima, annissaScript } = fonts;
+  const { arima } = fonts;
 
   const ChatWithMe = ({ children }: PropsWithChildren) => (
     <div
@@ -64,8 +64,8 @@ export default function Root() {
               " "
             )}`}
           >
-            <Text tagName="p" size="XXXXL">
-              <span className={`${annissaScript} font-thin`}>
+            <Text tagName="h1" size="XXXXL">
+              <span className={`${arima} font-normal`}>
                 The Wildshmi Wedding
               </span>
             </Text>
