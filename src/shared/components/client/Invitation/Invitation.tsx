@@ -4,8 +4,6 @@ import { EventNames } from "@/shared/models";
 import { InvitationContext } from "@/shared/providers/InvitationContext";
 import { useContext } from "react";
 import fonts from "@/shared/fonts";
-import Image from "next/image";
-import rings from "public/assets/images/icons/rings.png";
 
 export const Invitation = () => {
   const { arima } = fonts;
@@ -15,8 +13,8 @@ export const Invitation = () => {
   // console.log('Fetched data: ', data.url)
   const alignText = eventName === "Wedding" ? "left" : "center";
   return (
-    <div className={"text-center font-normal " + arima}>
-      <Text tagName="div" size="XXXL">
+    <div className={"text-center font-light " + arima}>
+      {/* <Text tagName="div" size="XXXL">
         <div className="flex justify-center items-center">
           <div className="w-1/4 text-right">David</div>
           <div className="text-center h-100 w-[20%]">
@@ -38,17 +36,29 @@ export const Invitation = () => {
           </div>
           <div className="w-1/4 text-left">Lakshmi</div>
         </div>
+      </Text> */}
+      <Text tagName="div" size="M">
+        You are warmly invited to join
+      </Text>
+      <Text tagName="div" size="XXXL">
+        <span className="font-normal">
+          David <strong style={{ color: "var(--wildshmi-primary)" }}>&</strong>{" "}
+          Lakshmi
+        </span>
       </Text>
       <Text tagName="div" size="M">
-        <span
+        at their {eventName} on
+      </Text>
+      <Text tagName="div" size="M">
+        <div
           style={{
             fontWeight: "bold",
             color: "var(--wildshmi-secondary)",
-            marginTop: "1rem",
+            marginTop: "1.5rem",
           }}
         >
           26.08.2023
-        </span>
+        </div>
       </Text>
       <div className="flex justify-center mt-[1rem]">
         {eventName === "Wedding" && (
