@@ -122,6 +122,11 @@ const TravelAndTipsPage: FC = () => {
         benefit from daily price caps. Start with £15-£30 credit for a two- to
         four-day trip, and you can top up as needed.
       </Paragraph>
+      <Paragraph>
+        You can also hail taxis (the famous London Black Cabs) from the street;
+        these are easier to come by in central London. Ride-hailing apps that
+        work in London are Uber, Bolt, and Ola.
+      </Paragraph>
       <Text tagName="h2" size="M">
         🚇Train and Tube
       </Text>
