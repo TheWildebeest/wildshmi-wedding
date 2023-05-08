@@ -370,14 +370,6 @@ const TravelAndTipsPage: FC = () => {
         sweater just in case. Comfortable shoes are also recommended if there is
         a lot of walking (or dancing) involved.
       </Paragraph>
-      <Text tagName="h2" size="L">
-        🚓 Safety
-      </Text>
-      <Paragraph>
-        London is generally a safe city, but it&lsquo;s always a good idea to
-        take precautions. We recommend keeping an eye on your belongings,
-        especially in crowded areas and around tourist attractions.
-      </Paragraph>
       <AccessibleImage
         image={towerbridge}
         altText="David and Lakshmi by Tower Bridge"
