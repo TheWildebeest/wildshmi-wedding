@@ -22,7 +22,7 @@ const ContactPage: FC = () => {
   };
   return (
     <>
-      <div>
+      <div className="max-w-[50em] mx-auto">
         <Text tagName="h2" size="L">
           📱 Get in touch
         </Text>
