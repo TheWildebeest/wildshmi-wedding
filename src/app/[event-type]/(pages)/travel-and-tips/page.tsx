@@ -43,7 +43,14 @@ const TravelAndTipsPage: FC = () => {
         the terminals is free — just follow the signs.
       </Paragraph>
       <Paragraph>
-        The <Link href="https://www.gatwickexpress.com/">Gatwick express</Link>{" "}
+        The{" "}
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.gatwickexpress.com/"
+        >
+          Gatwick express
+        </Link>{" "}
         runs direct to London Victoria, which is close to Westminster and
         Buckingham Palace — a great option if you want to start with some
         sightseeing. Travel takes 30 minutes.
@@ -64,7 +71,14 @@ const TravelAndTipsPage: FC = () => {
         ✈️ Heathrow
       </Text>
       <Paragraph>
-        The <Link href="https://www.heathrowexpress.com">Heathrow express</Link>{" "}
+        The{" "}
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.heathrowexpress.com"
+        >
+          Heathrow express
+        </Link>{" "}
         runs direct to London Paddington and takes only 15 minutes. From there
         you can take a stroll in Hyde Park or Regent&lsquo;s Park, or head over
         to Baker Street and check out the Sherlock Holmes Museum.
@@ -96,7 +110,11 @@ const TravelAndTipsPage: FC = () => {
       <Paragraph>
         However, if this isn&lsquo;t suitable because of international
         transaction fees or something, you should sort out a
-        <Link href="https://tfl.gov.uk/travel-information/visiting-london/visitor-oyster-card">
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://tfl.gov.uk/travel-information/visiting-london/visitor-oyster-card"
+        >
           {" "}
           visitor oyster card
         </Link>{" "}
@@ -123,7 +141,11 @@ const TravelAndTipsPage: FC = () => {
       <Paragraph>
         Make sure you always use the same payment method during your time in
         London. There is a daily and weekly{" "}
-        <Link href="https://tfl.gov.uk/fares/find-fares/tube-and-rail-fares/pay-as-you-go-caps">
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://tfl.gov.uk/fares/find-fares/tube-and-rail-fares/pay-as-you-go-caps"
+        >
           price cap
         </Link>{" "}
         which is automatically applied but if you use multiple payment methods,
@@ -141,7 +163,11 @@ const TravelAndTipsPage: FC = () => {
       </Paragraph>
       <Paragraph>
         Like trains and the Tube, though, bus fares are also covered by a{" "}
-        <Link href="https://tfl.gov.uk/fares/find-fares/tube-and-rail-fares/pay-as-you-go-caps">
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://tfl.gov.uk/fares/find-fares/tube-and-rail-fares/pay-as-you-go-caps"
+        >
           price cap
         </Link>{" "}
         , so make sure you use the same payment method on all transport in
@@ -163,20 +189,38 @@ const TravelAndTipsPage: FC = () => {
       </Paragraph>
       <List>
         <li>
-          <Link href="https://goo.gl/maps/cioaH5yNQL8ZrGKT8">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://goo.gl/maps/cioaH5yNQL8ZrGKT8"
+          >
             The Pilot Greenwich
           </Link>
         </li>
         <li>
-          <Link href="https://goo.gl/maps/9mLSzeXwTHxwjZN18">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://goo.gl/maps/9mLSzeXwTHxwjZN18"
+          >
             Holiday Inn Express
           </Link>
         </li>
         <li>
-          <Link href="https://goo.gl/maps/rcU8cSCfdvDbYFAW9">Radisson RED</Link>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://goo.gl/maps/rcU8cSCfdvDbYFAW9"
+          >
+            Radisson RED
+          </Link>
         </li>
         <li>
-          <Link href="https://goo.gl/maps/ahTwpSg4zq2b9vrK8">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://goo.gl/maps/ahTwpSg4zq2b9vrK8"
+          >
             London Angerstein hotel
           </Link>
         </li>
@@ -187,17 +231,29 @@ const TravelAndTipsPage: FC = () => {
       </Paragraph>
       <List>
         <li>
-          <Link href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-lewisham.html">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-lewisham.html"
+          >
             Premier Inn London Lewisham
           </Link>
         </li>
         <li>
-          <Link href="https://www.travelodge.co.uk/hotels/695/London-Lewisham-hotel">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.travelodge.co.uk/hotels/695/London-Lewisham-hotel"
+          >
             Travelodge London Lewisham
           </Link>
         </li>
         <li>
-          <Link href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-greenwich.html">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.premierinn.com/gb/en/hotels/england/greater-london/london/london-greenwich.html"
+          >
             Premier Inn London Greenwich
           </Link>
         </li>
@@ -215,7 +271,11 @@ const TravelAndTipsPage: FC = () => {
         Tower of London, Buckingham Palace, and the London Eye. Other must-see
         sights include the British Museum, the National Gallery, and the Tate
         Modern. The{" "}
-        <Link href="https://londonpass.com/en-us/london-attractions">
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://londonpass.com/en-us/london-attractions"
+        >
           London Pass
         </Link>{" "}
         gets you seamless access to 80+ tourist attractions at great value.
@@ -236,30 +296,64 @@ const TravelAndTipsPage: FC = () => {
       </Paragraph>
       <List>
         <li>
-          <Link href="https://gunpowderrestaurants.com/">Gunpowder</Link> for
-          Indian food with a modern twist
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gunpowderrestaurants.com/"
+          >
+            Gunpowder
+          </Link>{" "}
+          for Indian food with a modern twist
         </li>
         <li>
-          <Link href="https://duckandwaffle.com/">Duck and Waffle</Link> for
-          European food with 40th floor views
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://duckandwaffle.com/"
+          >
+            Duck and Waffle
+          </Link>{" "}
+          for European food with 40th floor views
         </li>
         <li>
-          <Link href="https://boroughmarket.org.uk/">Borough Market</Link> — a
-          historic food market in Central London
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://boroughmarket.org.uk/"
+          >
+            Borough Market
+          </Link>{" "}
+          — a historic food market in Central London
         </li>
         <li>
-          <Link href="https://ye-olde-cheshire-cheese.co.uk/">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ye-olde-cheshire-cheese.co.uk/"
+          >
             Ye Olde Cheshire Cheese
           </Link>{" "}
           a traditional pub from the 1500s
         </li>
         <li>
-          <Link href="https://www.thetoucansoho.co.uk/">Toucan</Link> an Irish
-          pub in Soho - it can get busy!
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.thetoucansoho.co.uk/"
+          >
+            Toucan
+          </Link>{" "}
+          an Irish pub in Soho - it can get busy!
         </li>
         <li>
-          <Link href="https://gailsbread.co.uk/">Gail&lsquo;s</Link> for
-          pastries and coffee breaks
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gailsbread.co.uk/"
+          >
+            Gail&lsquo;s
+          </Link>{" "}
+          for pastries and coffee breaks
         </li>
       </List>
       <Paragraph>
