@@ -1,5 +1,4 @@
 "use client";
-import { Paragraph } from "@/shared/components/Paragraph";
 import { Timeline } from "@/shared/components/Timeline";
 import React, { FC } from "react";
 
@@ -15,6 +14,9 @@ import couple from "public/assets/images/icons/couple.png";
 import champagne from "public/assets/images/icons/champagne.png";
 import { InvitationContext } from "@/shared/providers/InvitationContext";
 import { useContext } from "react";
+import { Text } from "@/shared/components/Text";
+import Link from "next/link";
+import { paragraphSpacing } from "@/shared/helpers";
 
 const AM = [
   {
@@ -81,9 +83,41 @@ const OurBigDayPage: FC = () => {
   console.log(eventName);
   return (
     <div className="max-w-[50em] mx-auto">
-      <Paragraph>
-        Here&lsquo;s a timeline so you know what to expect on the day!
-      </Paragraph>
+      <Text tagName="h2" size="L">
+        💒 Venue
+      </Text>
+
+      <section className={paragraphSpacing.join(" ")}>
+        <Text tagName="h2" size="XS">
+          <strong>Ceremony: </strong>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://goo.gl/maps/faNnmtLsiZk8KLVQ6"
+          >
+            Fitzrovia Chapel
+          </Link>{" "}
+          <br />
+          Fitzroy Place, 2 Pearson Square, London W1T 3BF
+        </Text>
+      </section>
+      <section className={paragraphSpacing.join(" ")}>
+        <Text tagName="h2" size="XS">
+          <strong>Evening Reception: </strong>{" "}
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://goo.gl/maps/WUkdwsjPFXmUj6Cj7"
+          >
+            Greenwich Yacht Club
+          </Link>
+          <br />
+          Fitzroy Place, 2 Pearson Square, London W1T 3BF
+        </Text>
+      </section>
+      <Text tagName="h2" size="L">
+        🕰️ Timeline
+      </Text>
       <Timeline items={timelineEntries[eventName]}></Timeline>
     </div>
   );
