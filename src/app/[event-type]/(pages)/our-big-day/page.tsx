@@ -17,6 +17,8 @@ import { useContext } from "react";
 import { Text } from "@/shared/components/Text";
 import Link from "next/link";
 import { paragraphSpacing } from "@/shared/helpers";
+import { Paragraph } from "@/shared/components/Paragraph";
+import { List } from "@/shared/components/List";
 
 const AM = [
   {
@@ -78,6 +80,49 @@ const timelineEntries = {
   "wedding-reception": PM,
 };
 
+const FitzroviaChapel = () => (
+  <section className={paragraphSpacing.join(" ")}>
+    <Text tagName="h2" size="XS">
+      <strong>Ceremony: </strong>{" "}
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://goo.gl/maps/JC2rXo9eLz5q6Smr8"
+      >
+        Fitzrovia Chapel
+      </Link>
+      <br />
+      Fitzroy Place, 2 Pearson Square, London W1T 3BF
+    </Text>
+  </section>
+);
+
+const GreenwichYachtClub = () => (
+  <section className={paragraphSpacing.join(" ")}>
+    <Text tagName="h2" size="XS">
+      <strong>Evening Reception: </strong>{" "}
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://goo.gl/maps/WUkdwsjPFXmUj6Cj7"
+      >
+        Greenwich Yacht Club
+      </Link>
+      <br />1 Pear Tree Way, Greenwich, London SE10 0BW
+    </Text>
+  </section>
+);
+
+const VenueDetails = {
+  "wedding-reception": <GreenwichYachtClub />,
+  wedding: (
+    <>
+      <FitzroviaChapel />
+      <GreenwichYachtClub />
+    </>
+  ),
+};
+
 const OurBigDayPage: FC = () => {
   const eventName = useContext(InvitationContext);
   console.log(eventName);
@@ -86,35 +131,19 @@ const OurBigDayPage: FC = () => {
       <Text tagName="h2" size="L">
         💒 Venue
       </Text>
-
-      <section className={paragraphSpacing.join(" ")}>
-        <Text tagName="h2" size="XS">
-          <strong>Ceremony: </strong>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://goo.gl/maps/faNnmtLsiZk8KLVQ6"
-          >
-            Fitzrovia Chapel
-          </Link>{" "}
-          <br />
-          Fitzroy Place, 2 Pearson Square, London W1T 3BF
-        </Text>
-      </section>
-      <section className={paragraphSpacing.join(" ")}>
-        <Text tagName="h2" size="XS">
-          <strong>Evening Reception: </strong>{" "}
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://goo.gl/maps/WUkdwsjPFXmUj6Cj7"
-          >
-            Greenwich Yacht Club
-          </Link>
-          <br />
-          Fitzroy Place, 2 Pearson Square, London W1T 3BF
-        </Text>
-      </section>
+      {VenueDetails[eventName]}
+      <Text tagName="h2" size="L">
+        🎩 Dress code
+      </Text>
+      <Paragraph>
+        Our dress code is flexible, please choose what you feel most comfortable
+        with from:
+      </Paragraph>
+      <List>
+        <li>Black tie (tuxedo / cocktail dress)</li>
+        <li>Formal wear (lounge suit / dress)</li>
+        <li>Indian traditional (kurta, sari etc.)</li>
+      </List>
       <Text tagName="h2" size="L">
         🕰️ Timeline
       </Text>
