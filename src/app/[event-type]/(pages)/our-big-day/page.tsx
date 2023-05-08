@@ -18,13 +18,13 @@ import { useContext } from "react";
 
 const AM = [
   {
-    time: "10:30",
+    time: "10:00",
     title: "Guests arrive",
     image: church,
   },
   {
     time: "11:00",
-    title: "“I do”s",
+    title: "Ceremony",
     image: rings,
   },
   {
