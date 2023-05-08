@@ -49,6 +49,7 @@ export default function Root() {
         <div className={filter}></div>
 
         <Image
+          priority={true}
           style={{
             objectPosition: "35% center",
           }}

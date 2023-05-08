@@ -23,6 +23,7 @@ const WeddingPage: FC = () => {
             }}
           >
             <Image
+              priority={true}
               src={floralarrangement}
               alt="Picture of a rose"
               style={{

@@ -1,5 +1,6 @@
 .heroImageWrapper {
   position: relative;
+  background-color: var(--wildshmi-grey);
   z-index: -1;
   width: 100%;
   overflow: hidden;

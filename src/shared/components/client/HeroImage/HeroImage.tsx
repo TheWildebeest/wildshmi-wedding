@@ -10,6 +10,12 @@ export interface HeroImageProps {
 export const HeroImage = ({ src }: HeroImageProps) => (
   <div className={heroImageWrapper}>
     <div className={heroFilter}></div>
-    <Image fill priority className={heroImage} src={src} alt="Hero image" />
+    <Image
+      fill
+      priority={true}
+      className={heroImage}
+      src={src}
+      alt="Hero image"
+    />
   </div>
 );
