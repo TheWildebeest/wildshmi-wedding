@@ -56,7 +56,7 @@ const GiftsPage: FC = () => {
         <Paragraph>
           As our wedding guest, all we expect of you is your <del>presents</del>{" "}
           <ins>presence</ins>, nothing more. Our wedding is a once-in-a-lifetime
-          experience for us, and it would mean the world to have your there.
+          experience for us, and it would mean the world to have you there.
         </Paragraph>
         <Paragraph>
           So, come and join us, dance with us, sing with us, take selfies and
