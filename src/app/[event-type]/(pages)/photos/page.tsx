@@ -15,7 +15,7 @@ const PhotosPage: FC = () => (
             >
               Proposal and engagement party
             </Link>{" "}
-            — London, 14.04.2023
+            — London, 14.02.2023
           </Text>
         </li>
         <li style={{ marginBottom: "1em" }}>
