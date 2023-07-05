@@ -32,7 +32,7 @@ const KaraokePage: FC = () => {
         </li>
         <li>
           <Link target="_blank" href="https://forms.gle/NSHSsrsFNreTydPS6">
-            <strong>Complete and submit this form</strong>
+            <strong className="font-bold">Complete and submit this form</strong>
           </Link>{" "}
           to let us know your song choices.
         </li>
@@ -45,7 +45,6 @@ const KaraokePage: FC = () => {
       <Text tagName="h2" size="L">
         🎤 Song list (alphabetical by original artist)
       </Text>
-      <br />
       <InfoBox title="Please note:" type="info">
         Song names with an asterisk (*) are &ldquo;advance notice&rdquo; songs
         which require more preparation by the band. The band can only prepare a
