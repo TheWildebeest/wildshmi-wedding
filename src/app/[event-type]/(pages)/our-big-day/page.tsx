@@ -42,31 +42,36 @@ const AM = [
     image: camera,
   },
   {
-    time: "15:00",
+    time: "16:00",
     title: "Wedding Breakfast",
     image: plate,
   },
   {
-    time: "16:00",
+    time: "17:00",
     title: "Speeches",
     image: speech,
   },
 ];
 const PM = [
   {
-    time: "17:00",
+    time: "18:30",
     title: "Evening guests arrive",
     image: champagne,
   },
   {
-    time: "18:00",
+    time: "20:00",
     title: "Live karaoke",
     image: karaoke,
   },
   {
-    time: "19:00",
+    time: "21:00",
     title: "First dance",
     image: couple,
+  },
+  {
+    time: "21:30",
+    title: "More karaoke",
+    image: karaoke,
   },
   {
     time: "00:00",
