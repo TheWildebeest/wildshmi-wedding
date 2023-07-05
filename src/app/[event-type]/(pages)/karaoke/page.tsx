@@ -19,7 +19,7 @@ const KaraokePage: FC = () => {
         We&lsquo;re super excited to have a live karaoke band and have YOU perform at our wedding!
       </Paragraph>
       <Paragraph>
-        It&lsquo;s is all the fun of karaoke, but instead of a backing track,
+        It&lsquo;s all the fun of karaoke, but instead of a backing track,
         you&lsquo;ll be performing with a five-piece LIVE BAND!
       </Paragraph>
       <Text tagName="h2" size="L">
