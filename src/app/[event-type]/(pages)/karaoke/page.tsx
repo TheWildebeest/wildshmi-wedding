@@ -43,7 +43,7 @@ const KaraokePage: FC = () => {
         </li>
       </List>
       <Text tagName="h2" size="L">
-        🎤 Song list (alphabetical by original artist)
+        🎹 Song list (alphabetical by original artist)
       </Text>
       <InfoBox title="Please note:" type="info">
         Song names with an asterisk (*) are &ldquo;advance notice&rdquo; songs
