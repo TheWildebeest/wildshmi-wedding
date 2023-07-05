@@ -16,7 +16,6 @@ const menuItems = dataProvider.getMenu();
 
 export const NavBar = ({ eventType }: Props) => {
   const [_, _path] = useSelectedLayoutSegments();
-  console.log(_path);
   const path = _path || "";
   const [navActive, setNavActive] = useState(false);
   const toggleNav = () => setNavActive(!navActive);
