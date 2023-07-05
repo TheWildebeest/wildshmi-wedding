@@ -7,8 +7,8 @@ import { List } from "@/shared/components/List";
 import { InfoBox } from "@/shared/components/InfoBox";
 import { usePathname } from "next/navigation";
 
-const BandeokePage: FC = () => {
-  const basePath = usePathname()?.replace("/bandeoke", "");
+const KaraokePage: FC = () => {
+  const basePath = usePathname()?.replace("/karaoke", "");
 
   return (
     <div className="max-w-[50em] mx-auto">
@@ -1797,4 +1797,4 @@ const BandeokePage: FC = () => {
     </div>
   );
 };
-export default BandeokePage;
+export default KaraokePage;

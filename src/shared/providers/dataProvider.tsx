@@ -9,7 +9,7 @@ const HREFS: Record<PageName, Href> = {
   GIFTS: "gifts",
   CONTACT: "contact",
   PHOTOS: "photos",
-  BANDEOKE: "bandeoke",
+  KARAOKE: "karaoke",
 };
 
 Object.freeze(HREFS);
@@ -23,7 +23,7 @@ const PAGE_TITLES: Record<Href, string> = {
   gifts: "Gifts",
   contact: "Contact",
   photos: "Photos",
-  bandeoke: "Bandeoke",
+  karaoke: "Karaoke",
 };
 
 Object.freeze(PAGE_TITLES);
@@ -62,8 +62,8 @@ const MENU_ITEMS: MenuItem[] = [
     href: HREFS.PHOTOS,
   },
   {
-    text: "BANDEOKE",
-    href: HREFS.BANDEOKE,
+    text: "KARAOKE",
+    href: HREFS.KARAOKE,
   },
 ];
 
