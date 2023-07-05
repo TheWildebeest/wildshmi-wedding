@@ -16,15 +16,11 @@ const BandeokePage: FC = () => {
         🧑‍🎤 Your turn to be a rock star
       </Text>
       <Paragraph>
-        We&lsquo;re super excited to have{" "}
-        <Link href="https://bandeoke-experience.co.uk/">
-          The Bandeoke Experience
-        </Link>{" "}
-        playing at our wedding!
+        We&lsquo;re super excited to have a live karaoke band and have YOU perform at our wedding!
       </Paragraph>
       <Paragraph>
-        Bandeoke is all the fun of karaoke, but instead of a backing track,
-        you&lsquo;ll be performing with five-piece LIVE BAND!
+        It&lsquo;s is all the fun of karaoke, but instead of a backing track,
+        you&lsquo;ll be performing with a five-piece LIVE BAND!
       </Paragraph>
       <Text tagName="h2" size="L">
         🎤 How to take part
@@ -36,7 +32,7 @@ const BandeokePage: FC = () => {
         </li>
         <li>
           <Link target="_blank" href="https://forms.gle/NSHSsrsFNreTydPS6">
-            Complete and submit this form
+            <strong>Complete and submit this form</strong>
           </Link>{" "}
           to let us know your song choices.
         </li>
