@@ -33,7 +33,7 @@ export const NavBar = ({ eventType }: Props) => {
         {menuItems.map((menuItem: MenuItem) => {
           const { href, text } = menuItem;
           return (
-            <li key={href} className="mx-4">
+            <li key={href} className="mx-4 text-sm sm:text-base">
               <NavItem
                 basePath={eventType}
                 isActive={path == href}
