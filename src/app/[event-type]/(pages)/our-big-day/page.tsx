@@ -12,6 +12,8 @@ import bus from "public/assets/images/icons/bus.png";
 import speech from "public/assets/images/icons/speech.png";
 import couple from "public/assets/images/icons/couple.png";
 import champagne from "public/assets/images/icons/champagne.png";
+import cake from "public/assets/images/icons/cake.png";
+import dancing from "public/assets/images/icons/dancing.png";
 import { InvitationContext } from "@/shared/providers/InvitationContext";
 import { useContext } from "react";
 import { Text } from "@/shared/components/Text";
@@ -42,12 +44,12 @@ const AM = [
     image: camera,
   },
   {
-    time: "16:00",
+    time: "15:00",
     title: "Wedding Breakfast",
     image: plate,
   },
   {
-    time: "17:00",
+    time: "16:00",
     title: "Speeches",
     image: speech,
   },
@@ -57,6 +59,11 @@ const PM = [
     time: "18:30",
     title: "Evening guests arrive",
     image: champagne,
+  },
+  {
+    time: "19:30",
+    title: "Cut the cake",
+    image: cake,
   },
   {
     time: "20:00",
@@ -72,6 +79,11 @@ const PM = [
     time: "21:30",
     title: "More karaoke",
     image: karaoke,
+  },
+  {
+    time: "22:00",
+    title: "Sangeet",
+    image: dancing,
   },
   {
     time: "00:00",
