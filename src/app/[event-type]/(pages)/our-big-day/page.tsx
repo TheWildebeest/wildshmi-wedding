@@ -154,8 +154,9 @@ const OurBigDayPage: FC = () => {
       {eventName === EventTypes.WEDDING && (
         <>
           <Paragraph>
-            A Wedding Special transport service will transfer guests from the
-            chapel to the reception.
+            A Wedding Special transport service will be provided to transfer all
+            guests from the chapel to the reception. There is no need to arrange
+            your own transportation.
           </Paragraph>
         </>
       )}
