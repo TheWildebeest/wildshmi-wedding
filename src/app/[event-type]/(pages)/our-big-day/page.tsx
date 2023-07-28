@@ -152,7 +152,7 @@ const OurBigDayPage: FC = () => {
       </Text>
       {VenueDetails[eventName]}
       {eventName === EventTypes.WEDDING && (
-        <InfoBox title="Good to know:" style="info">
+        <InfoBox title="Good to know:" type="info">
           Transport will be provided from the chapel to the reception. There is
           no need to arrange your own transportation.
         </InfoBox>
