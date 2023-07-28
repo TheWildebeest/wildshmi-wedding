@@ -22,7 +22,7 @@ export const NavBar = ({ eventType }: Props) => {
 
   return (
     <nav className="absolute top-0 left-0 right-0 text-white w-full">
-      <button onClick={toggleNav} className="lg:hidden absolute m-4">
+      <button onClick={toggleNav} className="lg:hidden absolute m-4 text-3xl">
         {navActive ? "✕" : "☰"}
       </button>
       <ul
