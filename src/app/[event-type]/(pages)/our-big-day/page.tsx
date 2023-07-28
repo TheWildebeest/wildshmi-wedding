@@ -14,9 +14,11 @@ import couple from "public/assets/images/icons/couple.png";
 import champagne from "public/assets/images/icons/champagne.png";
 import cake from "public/assets/images/icons/cake.png";
 import dancing from "public/assets/images/icons/dancing.png";
+import { InfoBox } from "@/shared/components/InfoBox";
 import { InvitationContext } from "@/shared/providers/InvitationContext";
 import { useContext } from "react";
 import { Text } from "@/shared/components/Text";
+import { EventTypes } from "@/shared/models";
 import Link from "next/link";
 import { paragraphSpacing } from "@/shared/helpers";
 import { Paragraph } from "@/shared/components/Paragraph";
@@ -149,6 +151,14 @@ const OurBigDayPage: FC = () => {
         💒 Venue
       </Text>
       {VenueDetails[eventName]}
+      {eventName === EventTypes.WEDDING && (
+        <>
+          <Paragraph>
+            A Wedding Special transport service will transfer guests from the
+            chapel to the reception.
+          </Paragraph>
+        </>
+      )}
       <Text tagName="h2" size="L">
         🎩 Dress code
       </Text>
@@ -161,6 +171,14 @@ const OurBigDayPage: FC = () => {
         <li>Formal wear (lounge suit / dress)</li>
         <li>Indian traditional (kurta, sari etc.)</li>
       </List>
+      {eventName === EventTypes.WEDDING && (
+        <InfoBox title="Restrictions" type="info">
+          <br />
+          Please <strong>don&lsquo;t wear stiletto heels</strong> inside
+          Fitzrovia Chapel, as they will damage the historic mosaic floor.
+        </InfoBox>
+      )}
+
       <Text tagName="h2" size="L">
         🕰️ Timeline
       </Text>
