@@ -152,13 +152,10 @@ const OurBigDayPage: FC = () => {
       </Text>
       {VenueDetails[eventName]}
       {eventName === EventTypes.WEDDING && (
-        <>
-          <Paragraph>
-            A Wedding Special transport service will be provided to transfer all
-            guests from the chapel to the reception. There is no need to arrange
-            your own transportation.
-          </Paragraph>
-        </>
+        <InfoBox title="Good to know:" style="info">
+          Transport will be provided from the chapel to the reception. There is
+          no need to arrange your own transportation.
+        </InfoBox>
       )}
       <Text tagName="h2" size="L">
         🎩 Dress code
