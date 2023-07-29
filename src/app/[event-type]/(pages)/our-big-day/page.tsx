@@ -169,13 +169,27 @@ const OurBigDayPage: FC = () => {
         <li>Formal wear (lounge suit / dress)</li>
         <li>Indian traditional (kurta, sari etc.)</li>
       </List>
-      {eventName === EventTypes.WEDDING && (
-        <InfoBox title="Restrictions" type="info">
-          <br />
-          Please <strong>don&lsquo;t wear stiletto heels</strong> inside
-          Fitzrovia Chapel, as they will damage the historic mosaic floor.
+      {
+        <InfoBox title="Restrictions" type="warning">
+          <ul style={{ listStyle: "inside square" }}>
+            {eventName === EventTypes.WEDDING && (
+              <li>
+                Please <strong>don&lsquo;t wear stiletto heels</strong> inside
+                Fitzrovia Chapel, as they will damage the historic mosaic floor.
+              </li>
+            )}
+            <li>
+              Unfortunately we cannot accept physical gifts on the day of the
+              wedding. If you are considering a wedding gift, please see our
+              gifts registry{" "}
+              <Link target="_blank" href="https://www.hitchd.com/wildshmi">
+                here
+              </Link>
+              .
+            </li>
+          </ul>
         </InfoBox>
-      )}
+      }
 
       <Text tagName="h2" size="L">
         🕰️ Timeline
