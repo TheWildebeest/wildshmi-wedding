@@ -1,16 +1,18 @@
 "use client";
-import Invitation from "@/shared/components/client/Invitation";
+// import Invitation from "@/shared/components/client/Invitation";
 import { Text } from "@/shared/components/Text";
 import { FC } from "react";
-import Image from "next/image";
-import floralarrangement from "../../../public/assets/images/floral-arrangement.png";
-import { RsvpButton } from "@/shared/components/RSVPButton";
+// import Image from "next/image";
+// import floralarrangement from "../../../public/assets/images/floral-arrangement.png";
+// import { RsvpButton } from "@/shared/components/RSVPButton";
+import ThankYou from "@/shared/components/client/ThankYou";
 
 const WeddingPage: FC = () => {
   return (
     <>
-      <Invitation></Invitation>
-      <RsvpButton></RsvpButton>
+      {/* <Invitation></Invitation> */}
+      <ThankYou></ThankYou>
+      {/* <RsvpButton></RsvpButton> */}
 
       <div className="text-center w-100" style={{ marginTop: "1rem" }}>
         <Text tagName="div" size="XL">
@@ -22,7 +24,7 @@ const WeddingPage: FC = () => {
               position: "relative",
             }}
           >
-            <Image
+            {/* <Image
               priority={true}
               src={floralarrangement}
               alt="Picture of a rose"
@@ -30,7 +32,7 @@ const WeddingPage: FC = () => {
                 objectFit: "cover",
                 width: "10em",
               }}
-            />
+            /> */}
           </div>
         </Text>
       </div>

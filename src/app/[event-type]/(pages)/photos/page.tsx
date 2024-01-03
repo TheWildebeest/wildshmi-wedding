@@ -8,18 +8,20 @@ const PhotosPage: FC = () => (
       <ul>
         <li style={{ marginBottom: "1em" }}>
           <Text size="M">
+            💒
             <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://louisegoodeyphotography.pic-time.com/NtQPrYzAZYa3p"
             >
-              <strong>Wildshmi Wedding photos</strong>
+              Official Wedding photos
             </Link>{" "}
             — London, 26.08.2023
           </Text>
         </li>
         <li style={{ marginBottom: "1em" }}>
           <Text size="M">
+            🌴
             <Link
               target="_blank"
               rel="noopener noreferrer"
@@ -32,6 +34,7 @@ const PhotosPage: FC = () => (
         </li>
         <li style={{ marginBottom: "1em" }}>
           <Text size="M">
+            💍
             <Link
               target="_blank"
               rel="noopener noreferrer"
