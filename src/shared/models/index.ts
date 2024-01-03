@@ -26,7 +26,7 @@ export type PageName =
   | "GIFTS"
   | "CONTACT"
   | "PHOTOS"
-  | "BANDEOKE";
+  | "KARAOKE";
 
 export type Href =
   | ""
@@ -37,4 +37,4 @@ export type Href =
   | "gifts"
   | "contact"
   | "photos"
-  | "bandeoke";
+  | "karaoke";

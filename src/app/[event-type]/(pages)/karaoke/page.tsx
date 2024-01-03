@@ -7,8 +7,8 @@ import { List } from "@/shared/components/List";
 import { InfoBox } from "@/shared/components/InfoBox";
 import { usePathname } from "next/navigation";
 
-const BandeokePage: FC = () => {
-  const basePath = usePathname()?.replace("/bandeoke", "");
+const KaraokePage: FC = () => {
+  const basePath = usePathname()?.replace("/karaoke", "");
 
   return (
     <div className="max-w-[50em] mx-auto">
@@ -16,15 +16,11 @@ const BandeokePage: FC = () => {
         🧑‍🎤 Your turn to be a rock star
       </Text>
       <Paragraph>
-        We&lsquo;re super excited to have{" "}
-        <Link href="https://bandeoke-experience.co.uk/">
-          The Bandeoke Experience
-        </Link>{" "}
-        playing at our wedding!
+        We&lsquo;re super excited to have a live karaoke band and have YOU perform at our wedding!
       </Paragraph>
       <Paragraph>
-        Bandeoke is all the fun of karaoke, but instead of a backing track,
-        you&lsquo;ll be performing with five-piece LIVE BAND!
+        It&lsquo;s all the fun of karaoke, but instead of a backing track,
+        you&lsquo;ll be performing with a five-piece LIVE BAND!
       </Paragraph>
       <Text tagName="h2" size="L">
         🎤 How to take part
@@ -36,7 +32,7 @@ const BandeokePage: FC = () => {
         </li>
         <li>
           <Link target="_blank" href="https://forms.gle/NSHSsrsFNreTydPS6">
-            Complete and submit this form
+            <strong className="font-bold">Complete and submit this form</strong>
           </Link>{" "}
           to let us know your song choices.
         </li>
@@ -47,9 +43,8 @@ const BandeokePage: FC = () => {
         </li>
       </List>
       <Text tagName="h2" size="L">
-        🎤 Song list (alphabetical by original artist)
+        🎹 Song list (alphabetical by original artist)
       </Text>
-      <br />
       <InfoBox title="Please note:" type="info">
         Song names with an asterisk (*) are &ldquo;advance notice&rdquo; songs
         which require more preparation by the band. The band can only prepare a
@@ -1801,4 +1796,4 @@ const BandeokePage: FC = () => {
     </div>
   );
 };
-export default BandeokePage;
+export default KaraokePage;

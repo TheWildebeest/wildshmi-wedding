@@ -12,9 +12,13 @@ import bus from "public/assets/images/icons/bus.png";
 import speech from "public/assets/images/icons/speech.png";
 import couple from "public/assets/images/icons/couple.png";
 import champagne from "public/assets/images/icons/champagne.png";
+import cake from "public/assets/images/icons/cake.png";
+import dancing from "public/assets/images/icons/dancing.png";
+import { InfoBox } from "@/shared/components/InfoBox";
 import { InvitationContext } from "@/shared/providers/InvitationContext";
 import { useContext } from "react";
 import { Text } from "@/shared/components/Text";
+import { EventTypes } from "@/shared/models";
 import Link from "next/link";
 import { paragraphSpacing } from "@/shared/helpers";
 import { Paragraph } from "@/shared/components/Paragraph";
@@ -54,19 +58,34 @@ const AM = [
 ];
 const PM = [
   {
-    time: "17:00",
+    time: "18:30",
     title: "Evening guests arrive",
     image: champagne,
   },
   {
-    time: "18:00",
+    time: "19:30",
+    title: "Cut the cake",
+    image: cake,
+  },
+  {
+    time: "20:00",
     title: "Live karaoke",
     image: karaoke,
   },
   {
-    time: "19:00",
+    time: "21:00",
     title: "First dance",
     image: couple,
+  },
+  {
+    time: "21:30",
+    title: "More karaoke",
+    image: karaoke,
+  },
+  {
+    time: "22:00",
+    title: "Sangeet",
+    image: dancing,
   },
   {
     time: "00:00",
@@ -132,6 +151,12 @@ const OurBigDayPage: FC = () => {
         💒 Venue
       </Text>
       {VenueDetails[eventName]}
+      {eventName === EventTypes.WEDDING && (
+        <InfoBox title="Good to know:" type="info">
+          Transport will be provided from the chapel to the reception. There is
+          no need to arrange your own transportation.
+        </InfoBox>
+      )}
       <Text tagName="h2" size="L">
         🎩 Dress code
       </Text>
@@ -144,6 +169,28 @@ const OurBigDayPage: FC = () => {
         <li>Formal wear (lounge suit / dress)</li>
         <li>Indian traditional (kurta, sari etc.)</li>
       </List>
+      {
+        <InfoBox title="Restrictions" type="warning">
+          <ul style={{ listStyle: "inside square" }}>
+            {eventName === EventTypes.WEDDING && (
+              <li>
+                Please <strong>don&lsquo;t wear stiletto heels</strong> inside
+                Fitzrovia Chapel, as they will damage the historic mosaic floor.
+              </li>
+            )}
+            <li>
+              Unfortunately we cannot accept physical gifts on the day of the
+              wedding. If you are considering a wedding gift, please see our
+              gifts registry{" "}
+              <Link target="_blank" href="https://www.hitchd.com/wildshmi">
+                here
+              </Link>
+              .
+            </li>
+          </ul>
+        </InfoBox>
+      }
+
       <Text tagName="h2" size="L">
         🕰️ Timeline
       </Text>
