@@ -50,7 +50,7 @@ export const ThankYou = () => {
             <strong>Official wedding photos</strong>
           </Link>
         </Text>
-        <Text size="M">
+        {/* <Text size="M">
           📽️
           <Link
             target="_blank"
@@ -59,7 +59,7 @@ export const ThankYou = () => {
           >
             <strong>Official wedding video</strong>
           </Link>
-        </Text>
+        </Text> */}
       </div>
     </>
   );
