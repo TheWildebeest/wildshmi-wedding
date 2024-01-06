@@ -41,7 +41,7 @@ export const ThankYou = () => {
           </div>
         </Text>
         <Text size="M">
-          📸
+          📸{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export const ThankYou = () => {
           </Link>
         </Text>
         <Text size="M">
-          📽️
+          📽️{" "}
           <Link
             target="_blank"
             rel="noopener noreferrer"
