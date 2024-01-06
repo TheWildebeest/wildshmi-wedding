@@ -50,16 +50,16 @@ export const ThankYou = () => {
             <strong>Official wedding photos</strong>
           </Link>
         </Text>
-        {/* <Text size="M">
+        <Text size="M">
           📽️
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://louisegoodeyphotography.pic-time.com/NtQPrYzAZYa3p"
+            href="https://youtu.be/UUdIFuyJMxk"
           >
             <strong>Official wedding video</strong>
           </Link>
-        </Text> */}
+        </Text>
       </div>
     </>
   );
